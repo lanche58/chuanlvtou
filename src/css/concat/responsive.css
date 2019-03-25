@@ -1,10 +1,10 @@
 @media screen and (max-width:1366px) {
     .header .nav>li>a{ font-size: 14px; padding-left: 14px; padding-right: 14px; }
-    .header .link{ margin-left: 30px; font-size: 16px; }
+    .header .link{ margin-top: 24px; width: 90px; height: 32px; line-height: 30px; font-size: 12px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
-    .header .link{ margin-left: 20px; }
+    .header .link{ width: auto; height: auto; border: none; margin: 28px 20px 0 10px; line-height: 24px; font-size: 14px; }
 }
 @media screen and (max-width:1024px) {
     .header, .mtop{ height: 60px; }

@@ -11,12 +11,12 @@
             }
         }
     }
-    .link{ float: left; margin-left: 62px - 22px; width: 80px; background: $mc1; color: #fff; font-size: 18px; font-weight: bold; line-height: 80px; text-align: center; 
-        @media screen and (min-width:1025px) {
-            &:hover{ opacity: .7; }
-        }
+    .link{ float: left; margin: (80px - 36px) / 2 30px 0 38px - 22px; width: 110px; height: 36px; @include bs; border: 1px solid $hc1; border-radius: 20px; text-align: center; line-height: 34px; color: $fc3; 
+        &:hover{ background: $mc1; border-color: $mc1; color: #fff; }
     }
 }
+
+.mtop{ height: 80px; }
 
 .menu-handler{
     background: $mc1;
@@ -44,4 +44,111 @@
     .mtv{ display: none; background: $mc1; padding: 10px 0;
         > a{ padding-top: 6px; padding-bottom: 6px; font-size: 16px; }
     }
+}
+
+.page-pa{ padding-left: 80px; padding-right: 80px; }
+
+.footer{ background: $fc1; padding-top: 63px; padding-bottom: 94px - 6px; line-height: 24px;
+    .logo{ width: 198px; }
+    .b{ margin-top: 40px; padding-top: 46px - 3px; border-top: 1px solid $hc4; }
+    .f-cta{ margin-top: 48px - 12px; }
+    .f-cop{ margin-top: 32px - 12px; }
+    .f-share{ margin-top: 40px; text-align: right; }
+    .r{ padding-top: 53px; }
+    a{
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1; }
+        }
+    }
+}
+
+.f-nav{
+    a{ float: left; margin-right: 42px; color: #fff; font-size: 16px; font-weight: bold; }
+}
+
+.f-cta{
+    a{ color: $fc3; }
+}
+
+.f-cop{
+    a{ display: block; }
+}
+
+.friendship-link{ position: relative; z-index: 99; width: 355px;
+    .s{ position: relative; border-bottom: 1px solid #fff; padding-top: 12px; padding-bottom: 12px; color: $fc3; }
+    .icon{ position: absolute; right: 0; top: 50%; margin-top: -12px; font-size: 14px; @include mt3; }
+    .k{ @include plr; bottom: 100%; padding: 10px 0; background: #fff; overflow: hidden; display: none; }
+    .g{ max-height: 300px; @include sy; }
+    a{ display: block; padding: 0 20px; line-height: 30px; }
+    &.act{
+        .icon{ transform: rotate(180deg); }
+    }
+}
+
+.f-share{
+    a{ @include c(26px); background: $fc2; text-align: center; font-size: 18px; line-height: 26px; color: $fc1; 
+        + a{ margin-left: 20px; }
+        @media screen and (min-width:1025px) {
+            &:hover{ background: #fff; }
+        }
+    }
+}
+
+.index-top{
+    .header{ background: url(../images/white.png); }
+    .mtop{ height: 0; }
+}
+
+.btn{ display: inline-block; vertical-align: top; }
+
+.btn-know{ width: 150px; height: 48px; border-radius: 25px; background: $mc1; text-align: center; color: #fff; line-height: 48px; white-space: nowrap; }
+
+.banner{
+    .txts{ position: absolute; top: 80px; left: (270 / 1920) * 100%; padding-top: (260 / 1920) * 100%; color: #fff; }
+    .ti{ font-weight: bold; font-size: 40px; line-height: 1.25; }
+    .btn-know{ margin-top: 50px; 
+        @media screen and (min-width:1025px) {
+            &:hover{ background: #fff; color: $mc1; }
+        }
+    }
+    .slick-dots{ bottom: 30px; right: 80px; text-align: right;
+        li{ width: 20px; height: 5px; margin: 0 0 0 12px; border-radius: 3px; background: #fff; 
+            @media screen and (min-width:1025px) {
+                &:hover{ background: $mc1; }
+            }
+        }
+        .slick-active{ width: 40px; background: $mc1; }
+    }
+}
+
+.recruitment-notice-wrap{
+    position: absolute; left: 0; bottom: 0; z-index: 199; width: 50%; height: 128px; background: url(../images/white.png);
+    .title{ float: left; width: 128px; height: 100%; padding-top: 42px; background: $mc1; @include bs; line-height: 1.1; font-size: 20px; font-weight: bold; color: #fff; text-align: center; }
+}
+
+.recruitment-notice-list{
+    padding: 28px 80px + 40px 28px 40px;
+    .item{ border: none; }
+    .item > a{ display: block; overflow: hidden; line-height: 24px; 
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1; 
+                .date{ color: $mc1; }
+            }
+        }
+    }
+    .nowti{ line-height: 24px; }
+    .date{ float: left; width: 72px + 20px; font-style: italic; color: $fc3; @include mt3; }
+}
+
+.slick-arrow{ text-align: center; font-family: "iconfont" !important; }
+.slick-prev:before{ content: "\e660"; }
+.slick-next:before{ content: "\e65f"; }
+
+.rn-arrow{
+    .slick-arrow{ top: auto; margin: 0; bottom: 0; background: #fff; color: $hc1; font-weight: bold; font-size: 8px; line-height: 40px; 
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1; color: #fff; }
+        }
+    }
+    .slick-prev{ left: auto; right: 40px; }
 }
