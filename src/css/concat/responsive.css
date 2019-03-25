@@ -1,0 +1,18 @@
+@media screen and (max-width:1366px) {
+    .header .nav>li>a{ font-size: 14px; padding-left: 14px; padding-right: 14px; }
+    .header .link{ margin-left: 30px; font-size: 16px; }
+}
+@media screen and (max-width:1201px) {
+    .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
+    .header .link{ margin-left: 20px; }
+}
+@media screen and (max-width:1024px) {
+    .header, .mtop{ height: 60px; }
+    .header .link, .header .nav{ display: none; }
+    .header .logo{ margin: 2px 0 0 5%; transform-origin: left center; transform: scale(.8); }
+    .menu-handler{ display: block; }
+}
+@media screen and (max-width:481px) {
+    .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
+    .navMobile .mtv>a{ font-size: 14px; }
+}

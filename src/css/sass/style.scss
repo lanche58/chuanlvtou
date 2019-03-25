@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "color";
+@import "repeat";
+.header{
+    height: 80px; line-height: 24px;
+    .logo{ float: left; width: 198px; margin: (80px - 56px) / 2 0 0 40px; transition: none; }
+    .nav{ float: left; 
+        > li{ float: left;
+            > a{ display: block; padding: (80px - 24px) / 2 22px; font-size: 16px; color: $fc1; 
+                &:hover, &.act{ background: $mc1; color: #fff; }
+            }
+        }
+    }
+    .link{ float: left; margin-left: 62px - 22px; width: 80px; background: $mc1; color: #fff; font-size: 18px; font-weight: bold; line-height: 80px; text-align: center; 
+        @media screen and (min-width:1025px) {
+            &:hover{ opacity: .7; }
+        }
+    }
+}
+
+.menu-handler{
+    background: $mc1;
+    .burger{ background: #fff; border-radius: 4px; }
+}
+
+.menuBox{
+    right: -274px;
+    width: 274px;
+    background: $mco1;
+    color: #fff;
+    a{ color: #fff; }
+    .navMobile{ padding: 80px 0 (50px - 20px) 0; }
+}
+
+.navMobile{
+    a{ display: block; text-align: center; line-height: 1.4; }
+    dd{
+        position: relative;
+        > a{ padding: (68px - 28px) / 2 0; font-size: 20px; 
+            &.act{ background: $mc2; }
+        }
+        + dd:before{ @include ba; left: 25px; right: 25px; top: 0; height: 1px; background: rgba(255,255,255,.2); }
+    }
+    .mtv{ display: none; background: $mc1; padding: 10px 0;
+        > a{ padding-top: 6px; padding-bottom: 6px; font-size: 16px; }
+    }
+}

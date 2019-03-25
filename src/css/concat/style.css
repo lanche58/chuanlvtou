@@ -1,0 +1,79 @@
+.header {
+  height: 80px;
+  line-height: 24px; }
+  .header .logo {
+    float: left;
+    width: 198px;
+    margin: 12px 0 0 40px;
+    transition: none; }
+  .header .nav {
+    float: left; }
+    .header .nav > li {
+      float: left; }
+      .header .nav > li > a {
+        display: block;
+        padding: 28px 22px;
+        font-size: 16px;
+        color: #333; }
+        .header .nav > li > a:hover, .header .nav > li > a.act {
+          background: #c82126;
+          color: #fff; }
+  .header .link {
+    float: left;
+    margin-left: 40px;
+    width: 80px;
+    background: #c82126;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center; }
+    @media screen and (min-width: 1025px) {
+      .header .link:hover {
+        opacity: .7; } }
+
+.menu-handler {
+  background: #c82126; }
+  .menu-handler .burger {
+    background: #fff;
+    border-radius: 4px; }
+
+.menuBox {
+  right: -274px;
+  width: 274px;
+  background: rgba(200, 33, 38, 0.9);
+  color: #fff; }
+  .menuBox a {
+    color: #fff; }
+  .menuBox .navMobile {
+    padding: 80px 0 30px 0; }
+
+.navMobile a {
+  display: block;
+  text-align: center;
+  line-height: 1.4; }
+
+.navMobile dd {
+  position: relative; }
+  .navMobile dd > a {
+    padding: 20px 0;
+    font-size: 20px; }
+    .navMobile dd > a.act {
+      background: #f27276; }
+  .navMobile dd + dd:before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2); }
+
+.navMobile .mtv {
+  display: none;
+  background: #c82126;
+  padding: 10px 0; }
+  .navMobile .mtv > a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 16px; }
