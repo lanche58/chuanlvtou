@@ -148,13 +148,13 @@
 </div>
 
 <div class="container">
-    <div class="ix1 clearfix">
+    <div class="ix1 clearfix scroll-animation">
         <div class="ix-party page-pa" style="background-image: url(img/ix_bg1.jpg);">
             <div class="ix-title clearfix">
                 <a href="#" class="plus-more btn icon iconfont icon-iconfontadd"></a>
                 <h3 class="ti">党建之窗</h3>
             </div>
-            <div class="ip-list u-slick">
+            <div class="ip-list u-slick trans transY">
                 <div class="item"><a href="news-detail.html">
                     <h4 class="nowti">习书记在全国组织工作上的讲话</h4>
                     <div class="b">
@@ -284,14 +284,50 @@
         </div>
     </div>
     
-</div>
-
-<div class="vwrap">
-    <div class="videobtg"></div>
-    <div class="videobox">
-        <div id="videobox"></div>
-        <div class="close"><i></i></div>
+    <div class="ix3 page-pa page-bg scroll-animation">
+        <ul class="ix-link clearfix">
+            <li class="trans transY"><a href="#" class="scapic">
+                <div class="pai"><img src="img/ix_i3.jpg" alt=""></div>
+                <h4 class="nowti">关于创新</h4>
+                <div class="txts">
+                    <h5 class="nowti">关于创新<span class="btn il-more icon iconfont icon-xiangyoujiantou"></span></h5>
+                    <p class="tx">四川旅投旅游创新开发有限责任公司是四川省旅游投资集团有限责任公司的全资子公司。</p>
+                </div>
+            </a></li>
+            <li class="trans transY"><a href="#" class="scapic">
+                <div class="pai"><img src="img/ix_i4.jpg" alt=""></div>
+                <h4 class="nowti">公示公告</h4>
+                <div class="txts">
+                    <h5 class="nowti">公示公告<span class="btn il-more icon iconfont icon-xiangyoujiantou"></span></h5>
+                    <p class="tx">四川旅投旅游创新开发有限责任公司是四川省旅游投资集团有限责任公司的全资子公司。</p>
+                </div>
+            </a></li>
+            <li class="trans transY"><a href="#" class="scapic">
+                <div class="pai"><img src="img/ix_i5.jpg" alt=""></div>
+                <h4 class="nowti">员工风采</h4>
+                <div class="txts">
+                    <h5 class="nowti">员工风采<span class="btn il-more icon iconfont icon-xiangyoujiantou"></span></h5>
+                    <p class="tx">四川旅投旅游创新开发有限责任公司是四川省旅游投资集团有限责任公司的全资子公司。</p>
+                </div>
+            </a></li>
+            <li class="trans transY"><a href="#" class="scapic">
+                <div class="pai"><img src="img/ix_i6.jpg" alt=""></div>
+                <h4 class="nowti">联系我们</h4>
+                <div class="txts">
+                    <h5 class="nowti">联系我们<span class="btn il-more icon iconfont icon-xiangyoujiantou"></span></h5>
+                    <p class="tx">四川旅投旅游创新开发有限责任公司是四川省旅游投资集团有限责任公司的全资子公司。</p>
+                </div>
+            </a></li>
+        </ul>
     </div>
+    
+    <div class="ix4 fixbg scroll-animation" style="background-image: url(img/ix_bg2.jpg);"><a href="#" class="page-pa ix-branch">
+        <div class="ix-title tac">
+            <h3 class="ti trans transY">下属企业</h3>
+            <div class="more trans transY dly-1"><span class="ib-more btn icon iconfont icon-xiangyoujiantou"></span></div>
+        </div>
+    </a></div>
+    
 </div>
 
 <div class="footer page-pa">
@@ -344,7 +380,6 @@
 </div>
 <script src="js/plugin.js"></script>
 
-<script src="js/video/player.mini.js"></script>
 <script src="js/page.js"></script>
 <script>
     function indexBox() {
@@ -363,14 +398,9 @@
         indexBox();
     });
     $(function(){
-        // var bannerNum = $('.banner .item').length;
-        // bannerNum = bannerNum > 9 ? bannerNum : '0' + bannerNum;
-        // $('.banner-num .anum').html(bannerNum);
-
         $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
             $('.banner .item').first().addClass('active');
         });
-        // $('#line').css({width:0}).stop().animate({width:100+'%'},4800,'linear');
         $('.banner').slick({
             speed: 1000,
             arrows: false,
@@ -382,10 +412,6 @@
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             $('.banner .item').removeClass('active');
             $('.banner .item').eq(nextSlide).addClass('active');
-            // var minnum = nextSlide + 1;
-            // minnum = minnum > 9 ? minnum : '0' + minnum;
-            // $('.banner-num .cnum').html(minnum);
-            // $('#line').css({width:0}).stop().animate({width:100+'%'},5800,'linear');
         });
         $('.recruitment-notice-list').slick({
             slidesToShow: 3,
@@ -431,76 +457,12 @@
             $('.ix-pro .item').removeClass('active');
             $('.ix-pro .item').eq(nextSlide).addClass('active');
         });
-        // $('.hot-news-list').slick({
-        //     arrows: false,
-        //     dots: true
-        // });
-        // function changeNews(i) {
-        //     $('.in-nav li').removeClass('act').eq(i).addClass('act');
-        //     $('.in-list li').hide().eq(i).show();
-        // }
-        // changeNews(0);
-        // $('.in-nav li').bind(_click, function() {
-        //     var index = $(this).index();
-        //     changeNews(index);
-        // });
-        // $('.ip-imgs').slick({
-        //     arrows: false,
-        //     dots: true,
-        //     fade: true,
-        //     speed: 0,
-        //     responsive: [{
-        //         breakpoint: 1025,
-        //         settings: {
-        //             fade: false,
-        //             speed: 800
-        //         }
-        //     }]
-
-        // });
-        // $('.ip-nav a').mouseenter(function() {
-        //     if (isMobile) { return; }
-        //     var index = $(this).parent().index();
-        //     $('.ip-nav a').removeClass('act');
-        //     $(this).addClass('act');
-        //     $('.ip-imgs').slick('slickGoTo', index);
-        // });
-        // $('.ix-news-l').slick({
-        //     arrows: false,
-        //     dots: true,
-        //     autoplay: true,
-        //     autoplaySpeed: 5000,
-        // });
-        // function changeNews(i) {
-        //     $('.ix-news-nav li').removeClass('act').eq(i).addClass('act');
-        //     $('.ix-news-list li').hide().eq(i).show();
-        // }
-        // changeNews(0);
-        // $('.ix-news-nav li').bind(_click, function() {
-        //     var index = $(this).index();
-        //     changeNews(index);
-        // });
-        // $('.ix-pro-list').slick({
-        //     speed: 1000,
-        //     arrows: true,
-        //     dots: true,
-        //     autoplay: false,
-        //     autoplaySpeed: 5000,
-        //     fade: true,
-        //     pauseOnHover: false
-        // });
-        // $('.ip-nav li').each(function(i, e) {
-        //     $(this).css({
-        //         'transition-delay': 200*i + 'ms',
-        //         '-webkit-transition-delay': 200*i + 'ms'
-        //     })
-        // });
-        // $('.ix-link-list li').each(function(i, e) {
-        //     $(this).css({
-        //         'transition-delay': 200*i + 'ms',
-        //         '-webkit-transition-delay': 200*i + 'ms'
-        //     })
-        // });
+        $('.ix-link li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 200*i + 'ms',
+                '-webkit-transition-delay': 200*i + 'ms'
+            });
+        });
     })
 </script>
 </body>

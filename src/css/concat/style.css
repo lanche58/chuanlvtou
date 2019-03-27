@@ -534,3 +534,108 @@
   text-align: center;
   font-size: 12px;
   transition: 300ms; }
+
+.ix-link {
+  margin-left: -45px; }
+  .ix-link li {
+    width: 25%;
+    float: left; }
+  .ix-link a {
+    display: block;
+    position: relative;
+    margin-left: 45px;
+    overflow: hidden; }
+    @media screen and (min-width: 1025px) {
+      .ix-link a:hover .txts {
+        transform: none;
+        opacity: 1;
+        visibility: visible; }
+      .ix-link a:hover h4.nowti {
+        transform: translateY(100%);
+        opacity: 0;
+        visibility: hidden; } }
+  .ix-link .pai {
+    padding-bottom: 100%; }
+  .ix-link h4.nowti, .ix-link .txts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 400ms; }
+  .ix-link h4.nowti {
+    background: url(../images/black5.png);
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 54px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff; }
+  .ix-link .txts {
+    height: 165px;
+    padding: 47px 35px 0;
+    background: #fff;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden; }
+    .ix-link .txts:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 35px;
+      width: 35px;
+      height: 14px;
+      background: #c82126; }
+  .ix-link h5.nowti {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; }
+  .ix-link .il-more {
+    margin: 1px 0 0 15px;
+    float: right; }
+  .ix-link .tx {
+    margin-top: 10px;
+    height: 48px; }
+
+.il-more {
+  border: 2px solid #ccc;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  line-height: 18px;
+  font-size: 6px;
+  color: #ccc;
+  text-align: center; }
+
+.page-bg {
+  background: #f2f2f2; }
+
+.ix3 {
+  padding-top: 85px;
+  padding-bottom: 85px; }
+
+.ix4 {
+  padding-top: 95px;
+  padding-bottom: 95px; }
+
+.ix-branch {
+  display: block;
+  color: #fff; }
+  .ix-branch .ti {
+    margin-bottom: 23px; }
+  @media screen and (min-width: 1025px) {
+    .ix-branch:hover .ib-more {
+      transform: translateX(10px); } }
+
+.ib-more {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 38px;
+  transition: 300ms; }

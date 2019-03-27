@@ -20,6 +20,10 @@
     .ix-party{ padding-top: 45px; }
     .ix-party .ip-list{ margin-top: 73px; }
     .ip-list .slick-dots, .ip-list .nowti, .ip-list .b{ padding-left: 40px; padding-right: 40px; }
+    .ix-link a{ margin-left: 25px; }
+    .ix-link{ margin-left: -25px; }
+    .ix-link .txts{ height: 125px; padding: 25px 25px 0; }
+    .ix-link .txts:before{ left: 25px; height: 8px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
@@ -49,6 +53,10 @@
     .ip-list .b, .ip-list .nowti, .ip-list .slick-dots { padding-left: 25px; padding-right: 25px; }
     .ix-pro .txts{ padding-left: 45px; padding-right: 45px; }
     .rn-arrow .slick-prev{ background: #c82126; color: #fff; }
+    .ix-link a{ margin-left: 15px; }
+    .ix-link{ margin-left: -15px; }
+    .ix3{ padding-top: 65px; padding-bottom: 65px; }
+    .ix-link h4.nowti{ line-height: 44px; font-size: 14px; }
 }
 @media screen and (max-width:861px) {
     .banner .ti{ font-size: 32px; }
@@ -62,6 +70,8 @@
     .ix-pro .txts{ position: static; width: 100%; padding-left: 5%; padding-right: 5%; }
     .ix-pro .slick-arrow{ right: 40px; }
     .ix-pro .slick-next{ background: #f2f2f2; }
+    .ix-link li{ width: 50%; margin-bottom: 15px; }
+    .ix3{ padding-bottom: 50px; }
 }
 @media screen and (max-width:601px) {
     .banner .ti{ font-size: 26px; }
@@ -81,6 +91,9 @@
     .plus-more{ width: 32px; height: 32px; line-height: 32px; }
     .ix-party .ip-list{ margin-top: 12vw; }
     .ip-list .b, .ip-list .nowti, .ip-list .slick-dots{ padding-left: 4.17vw; padding-right: 4.17vw; }
+    .ix4{ padding-top: 15.83vw; padding-bottom: 15.83vw; }
+    .ix-branch .ti{ margin-bottom: 3.83vw; }
+    .ib-more{ width: 38px; height: 38px; line-height: 34px; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
@@ -93,4 +106,10 @@
     .in-hot a{ background: #f2f2f2; }
     .in-hot .txts{ padding-left: 5%; padding-right: 5%; padding-bottom: 20px; }
     .ix-pro .txts{ padding-top: 30px; }
+    .ix3{ padding-top: 45px; padding-bottom: 35px; }
+    .ix-link a{ margin-left: 10px; }
+    .ix-link{ margin-left: -10px; }
+    .ix-link li{ margin-bottom: 10px; }
+    .ix-link h4.nowti{ line-height: 38px; font-size: 12px; }
+    .ib-more{ width: 32px; height: 32px; line-height: 28px; }
 }

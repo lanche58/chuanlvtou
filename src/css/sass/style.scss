@@ -266,3 +266,44 @@
 .ip-more{
     width: 102px; height: 32px; line-height: 32px; border-radius: 20px; background: $fc3; color: #fff; text-align: center; font-size: 12px; @include mt3;
 }
+
+.ix-link{
+    margin-left: -45px;
+    li{ width: 25%; float: left; }
+    a{ display: block; position: relative; margin-left: 45px; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .txts{ transform: none; @include show; }
+                h4.nowti{ transform: translateY(100%); @include hide; }
+            }
+        }
+    }
+    .pai{ padding-bottom: 100%; }
+    h4.nowti, .txts{ @include plr; bottom: 0; @include mt4; }
+    h4.nowti{ @include b5; padding: 0 5%; background: rgba(0,0,0,.3); line-height: 54px; font-size: 16px; text-align: center; color: #fff; }
+    .txts{ height: 165px; padding: 50px - 3px 35px 0; background: #fff; @include bs; transform: translateY(100%); @include hide;
+        &:before{ @include ba; top: 0; left: 35px; width: 35px; height: 14px; background: $mc1; }
+    }
+    h5.nowti{ font-size: 18px; font-weight: bold; color: $fc1; }
+    .il-more{ margin: 1px 0 0 15px; float: right; }
+    .tx{ margin-top: 22px - 12px; height: 24px * 2; }
+}
+
+.il-more{ border: 2px solid $hc1; @include c(22px); @include bs; line-height: 22px - 4px; font-size: 6px; color: $hc1; text-align: center; }
+
+.page-bg{ background: $hc3; }
+
+.ix3{ padding-top: 85px; padding-bottom: 85px; }
+
+.ix4{ padding-top: 95px; padding-bottom: 95px; }
+
+.ix-branch{ display: block; color: #fff; 
+    .ti{ margin-bottom: 30px - 7px; }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .ib-more{ transform: translateX(10px); }
+        }
+    }
+}
+
+.ib-more{ @include c(42px); border: 2px solid #fff; @include bs; text-align: center; font-weight: bold; font-size: 8px; line-height: 42px - 4px; @include mt3; }
