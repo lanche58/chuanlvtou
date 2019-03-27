@@ -1,18 +1,96 @@
+@media screen and (max-width:1600px) {
+    .in-cont .in-hot{ width: 325px; }
+    .in-list a+a { margin-top: 13px; }
+    .ix-party .ip-list{ margin-top: 113px; }
+}
 @media screen and (max-width:1366px) {
     .header .nav>li>a{ font-size: 14px; padding-left: 14px; padding-right: 14px; }
     .header .link{ margin-top: 24px; width: 90px; height: 32px; line-height: 30px; font-size: 12px; }
+    .banner .txts{ padding-top: 10%; }
+    .banner .ti{ font-size: 36px; }
+    .banner .btn-know{ margin-top: 40px; }
+    .page-pa{ padding-left: 60px; padding-right: 60px; }
+    .in-cont{ padding-right: 60px; }
+    .ix-news .in-nav{ margin-bottom: 45px; }
+    .in-cont .in-hot{ width: 265px; }
+    .in-hot .tx{ font-size: 16px; }
+    .in-hot .txts{ padding-top: 15px; }
+    .in-list a+a { margin-top: 9px; }
+    .in-nav li{ font-size: 16px; line-height: 54px; }
+    .ix-party{ padding-top: 45px; }
+    .ix-party .ip-list{ margin-top: 73px; }
+    .ip-list .slick-dots, .ip-list .nowti, .ip-list .b{ padding-left: 40px; padding-right: 40px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
     .header .link{ width: auto; height: auto; border: none; margin: 28px 20px 0 10px; line-height: 24px; font-size: 14px; }
+    .page-pa{ padding-left: 40px; padding-right: 40px; }
+    .in-cont{ padding-right: 40px; }
+    .in-cont .in-hot{ display: none; }
+    .ix-news .in-nav{ margin-bottom: 40px; }
 }
 @media screen and (max-width:1024px) {
     .header, .mtop{ height: 60px; }
     .header .link, .header .nav{ display: none; }
     .header .logo{ margin: 2px 0 0 5%; transform-origin: left center; transform: scale(.8); }
     .menu-handler{ display: block; }
+    .index-top .mtop{ height: 60px; }
+    .index-top .header{ background: #fff; }
+    .banner .txts{ left: 5%; top: 50%; padding-top: 0; transform: translateY(-50%); }
+    .banner .slick-dots{ right: 0; text-align: center; }
+    .banner .slick-dots li{ margin: 0 6px; }
+    .recruitment-notice-wrap{ position: relative; border-bottom: 1px solid #f2f2f2; width: 100%; padding-right: 5%; box-sizing: border-box; height: 60px; }
+    .recruitment-notice-list .slick-arrow{ display: none !important; }
+    .recruitment-notice-wrap .title{ padding-top: 12px; width: 60px; margin-right: 20px; line-height: 18px; font-size: 16px; }
+    .recruitment-notice-list{ padding: 18px 0 0; }
+    .f-nav a{ margin-right: 32px; font-size: 14px; }
+    .page-pa{ padding-left: 5%; padding-right: 5%; }
+    .in-cont{ padding-left: 10%; padding-right: 10%; }
+    .ip-list .b, .ip-list .nowti, .ip-list .slick-dots { padding-left: 25px; padding-right: 25px; }
+    .ix-pro .txts{ padding-left: 45px; padding-right: 45px; }
+    .rn-arrow .slick-prev{ background: #c82126; color: #fff; }
+}
+@media screen and (max-width:861px) {
+    .banner .ti{ font-size: 32px; }
+    .banner .btn-know{ margin-top: 30px; }
+    .footer .l, .footer .r{ float: none; max-width: none; }
+    .footer .f-share{ text-align: left; }
+    .footer .l{ padding-top: 30px; }
+    .ix-news, .ix-party{ float: none; width: 100%; }
+    .in-cont{ padding-left: 5%; padding-right: 5%; }
+    .ix-news{ padding-bottom: 50px; }
+    .ix-pro .txts{ position: static; width: 100%; padding-left: 5%; padding-right: 5%; }
+    .ix-pro .slick-arrow{ right: 40px; }
+    .ix-pro .slick-next{ background: #f2f2f2; }
+}
+@media screen and (max-width:601px) {
+    .banner .ti{ font-size: 26px; }
+    .banner .btn-know{ width: 25vw; height: 8vw; line-height: 8vw; margin-top: 5vw; }
+    .banner .slick-dots{ bottom: 5vw; }
+    .banner .slick-dots li{ width: 3.33vw; margin: 0 1vw; }
+    .banner .slick-dots .slick-active{ width: 6.67vw; }
+    .footer{ padding-top: 10vw; padding-bottom: 15vw; }
+    .footer .f-nav{ margin-top: 6.67vw; padding-top: 7.5vw; }
+    .f-nav a{ margin-right: 5vw; }
+    .footer .b{ margin-top: 6vw; }
+    .footer .f-share{ margin-top: 6.67vw; }
+    .footer .l{ padding-top: 5vw; }
+    .footer .f-cop{ margin-top: 3.33vw; }
+    .ix-title .ti{ font-size: 26px; }
+    .ix-title .plus-more{ margin-top: 2px; }
+    .plus-more{ width: 32px; height: 32px; line-height: 32px; }
+    .ix-party .ip-list{ margin-top: 12vw; }
+    .ip-list .b, .ip-list .nowti, .ip-list .slick-dots{ padding-left: 4.17vw; padding-right: 4.17vw; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
     .navMobile .mtv>a{ font-size: 14px; }
+    .banner .btn-know{ font-size: 12px; }
+    .ix-title .ti, .banner .ti{ font-size: 22px; }
+    .recruitment-notice-wrap .title{ margin-right: 15px; }
+    .plus-more{ width: 26px; height: 26px; line-height: 26px; }
+    .in-cont .in-hot{ display: block; width: 100%; float: none; margin-bottom: 5vw; }
+    .in-hot a{ background: #f2f2f2; }
+    .in-hot .txts{ padding-left: 5%; padding-right: 5%; padding-bottom: 20px; }
+    .ix-pro .txts{ padding-top: 30px; }
 }

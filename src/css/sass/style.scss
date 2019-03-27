@@ -50,16 +50,16 @@
 
 .footer{ background: $fc1; padding-top: 63px; padding-bottom: 94px - 6px; line-height: 24px;
     .logo{ width: 198px; }
-    .b{ margin-top: 40px; padding-top: 46px - 3px; border-top: 1px solid $hc4; }
-    .f-cta{ margin-top: 48px - 12px; }
+    .f-nav{ margin-top: 40px; padding-top: 46px - 3px; border-top: 1px solid $hc4; }
+    .b{ margin-top: 48px - 12px; }
     .f-cop{ margin-top: 32px - 12px; }
     .f-share{ margin-top: 40px; text-align: right; }
-    .r{ padding-top: 53px; }
     a{
         @media screen and (min-width:1025px) {
             &:hover{ color: $mc1; }
         }
     }
+    .r, .l{ max-width: 50%; }
 }
 
 .f-nav{
@@ -74,7 +74,7 @@
     a{ display: block; }
 }
 
-.friendship-link{ position: relative; z-index: 99; width: 355px;
+.friendship-link{ position: relative; z-index: 99; width: 355px; max-width: 100%;
     .s{ position: relative; border-bottom: 1px solid #fff; padding-top: 12px; padding-bottom: 12px; color: $fc3; }
     .icon{ position: absolute; right: 0; top: 50%; margin-top: -12px; font-size: 14px; @include mt3; }
     .k{ @include plr; bottom: 100%; padding: 10px 0; background: #fff; overflow: hidden; display: none; }
@@ -151,4 +151,118 @@
         }
     }
     .slick-prev{ left: auto; right: 40px; }
+}
+
+.ix-party{
+    float: left; padding-top: 65px; padding-bottom: 50px; width: 50%; @include bg; @include bs; color: #fff;
+    a{ color: #fff; }
+    .ip-list{ margin-top: 136px - 3px; }
+}
+
+.ix-title{
+    .ti{ overflow: hidden; font-size: 30px; font-weight: bold; }
+    .plus-more{ float: right; margin: (42px - 36px) / 2 0 0 20px; }
+}
+
+.btn{ @include di; }
+
+.plus-more{
+    width: 36px; height: 36px; background: $mc1; line-height: 36px; font-size: 12px; font-weight: bold; text-align: center; color: #fff;
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: #fff; color: $mc1;
+        }
+    }
+}
+
+.ip-list{
+    .item{
+        > a{ display: block; height: 210px; @include b5; 
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    .nowti{ color: $mc1; }
+                }
+            }
+        }
+    }
+    .nowti{ padding: 25px 50px 15px; border-bottom: 1px solid #fff; border-color: rgba(255,255,255,.5); font-size: 18px; @include mt3; }
+    .b{ padding: 21px - 6px 50px 0; }
+    .tx{ margin-bottom: 21px - 11px; height: 24px * 2; }
+    .date{ font-size: 12px; color: rgba(255,255,255,.5); font-style: italic; }
+    .slick-dots{ padding: 0 50px; bottom: 25px; text-align: left; 
+        li{ width: 8px; height: 8px; margin: 0; background: #fff; 
+            + li{ margin-left: 13px; }
+            @media screen and (min-width:1025px) {
+                &:hover{ background: $mc1; }
+            }
+        }
+        .slick-active{ background: $mc1; }
+    }
+}
+
+.ix-news{ width: 50%; float: right; 
+    .in-nav{ margin-bottom: 55px; }
+}
+
+.in-nav{
+    border-bottom: 1px solid $hc3;
+    li{ width: 33.33%; float: left; padding: 0 5%; text-align: center; font-size: 18px; line-height: 60px; @include bs; cursor: pointer;
+        &.act{ background: $mc1; color: #fff; }
+        @media screen and (min-width:1025px) {
+            &:not(.act):hover{
+                color: $mc1;
+            }
+        }
+    }
+}
+
+.in-cont{
+    padding-left: 40px; padding-right: 80px;
+    li{ overflow: hidden; display: none; }
+    .in-hot{ float: left; width: 365px; margin-right: (50 / 840) * 100%; }
+    .in-list{ overflow: hidden; }
+}
+
+.in-hot{
+    a{ display: block; 
+        &:hover{
+            .in-more{ background: $mc1; }
+        }
+    }
+    .pai{ padding-bottom: (230 / 365) * 100%; }
+    .tx{ margin-bottom: 20px; height: 26px * 2; font-size: 18px; line-height: 26px !important; color: $fc1; }
+    .date{ font-size: 12px; color: $fc3; }
+    .in-more{ float: right; }
+    .txts{ padding-top: 20px; }
+}
+
+.in-more{ padding: 0 8px; background: $hc1; font-size: 12px; color: #fff; line-height: 20px; white-space: nowrap; @include mt3; }
+
+.in-list{
+    a{ display: block; line-height: 20px; overflow: hidden; 
+        + a{ margin-top: 24px - 8px; }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+                .date{ color: $mc1; }
+            }
+        }
+    }
+    .date{ float: left; margin-right: 15px; font-size: 12px; font-style: italic; color: $fc3; @include mt3; }
+    .nowti{ line-height: 20px; }
+}
+
+.ix-pro{
+    .item > a{ display: block; position: relative; }
+    .pai{ padding-bottom: (800 / 1920) * 100%; }
+    .txts{ position: absolute; right: 0; bottom: 0; padding-top: 39px - 4px; width: 50%; height: 200px; background: url(../images/white.png); @include bs; overflow: hidden; }
+    .nowti{ margin-bottom: 5px; font-size: 18px; font-weight: bold; color: $fc1; }
+    .tx{ margin-bottom: 32px - 5px; height: 24px * 2; width: 610px; max-width: 100%; }
+    .slick-dots{ display: none !important; }
+    .slick-arrow{ right: 50%; }
+    .slick-next{ margin-right: -40px; }
+}
+
+.ip-more{
+    width: 102px; height: 32px; line-height: 32px; border-radius: 20px; background: $fc3; color: #fff; text-align: center; font-size: 12px; @include mt3;
 }
