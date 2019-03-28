@@ -74,6 +74,7 @@
         <div class="ab3">
             <div class="ab-title page-pa">
                 <h3 class="ti">六大块板</h3>
+                <span class="line"></span>
             </div>
             <div class="ab-block-list rn-arrow u-slick">
                 <div class="item">
@@ -169,11 +170,22 @@
         indexBox();
     });
     $(function(){
-        $('.ab-block-list').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            autoplay: true,
-            autoplaySpeed: 5000
+        function removeSlick() {
+            var isSlick = $('.ab-block-list').hasClass('slick-slider');
+            if (w_width > 1024 && isSlick === false) {
+                $('.ab-block-list').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                });
+            } else if (w_width <= 1024 && isSlick == true) {
+                $('.ab-block-list').slick('unslick');
+            }
+        };
+        removeSlick();
+        $(window).resize(function() {
+            removeSlick();
         });
 
 

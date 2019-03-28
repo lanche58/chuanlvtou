@@ -433,7 +433,9 @@
 
 .ab3{
     padding-top: 80px;
-    .ab-title{ margin-bottom: 53px - 7px; }
+    .ab-title{ margin-bottom: 53px - 7px; 
+        .line{ display: block; }
+    }
 }
 
 .ab4{
@@ -452,7 +454,7 @@
 }
 
 #top{
-    position: fixed; left: (280px - 70px) / 2; bottom: 80px; z-index: 299; padding-top: 6px; width: 70px; height: 50px; font-size: 12px; text-align: center; color: $fc3; @include bs; line-height: 1; transform: translateY(100%); cursor: pointer; @include hide; @include mt4;
+    position: fixed; left: (280px - 70px) / 2; bottom: 40px; z-index: 299; padding-top: 6px; width: 70px; height: 50px; font-size: 12px; text-align: center; color: $fc3; @include bs; line-height: 1; transform: translateY(100%); cursor: pointer; @include hide; @include mt4;
     .sj{ display: block; margin: 0 auto 10px; border-left-width: 9px; border-right-width: 9px; border-bottom-width: 16px; }
     &.show{ transform: none; @include show; }
     &.change{ background: $mc1; background: $mco2; color: #fff; }

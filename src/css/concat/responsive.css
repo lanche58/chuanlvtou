@@ -2,6 +2,17 @@
     .in-cont .in-hot{ width: 325px; }
     .in-list a+a { margin-top: 13px; }
     .ix-party .ip-list{ margin-top: 113px; }
+    .ab-info .wrap{ padding: 0; }
+    .ab-block-list .txts{ padding-left: 40px; padding-right: 40px; }
+    .ab-block-list .freeTx{ font-size: 14px; height: 260px; }
+    .ab-block-list .txts{ height: 410px; }
+}
+@media screen and (max-width:1440px) {
+    .ab1 .ab-title{ margin-bottom: 55px; }
+    .ab-platform-list .ma{ margin-left: 45px; }
+    .ab-platform-list{ margin-left: -45px; }
+    .ab-platform-list .ti{ font-size: 24px; }
+    .ab-platform-list .num{ font-size: 42px; }
 }
 @media screen and (max-width:1366px) {
     .header .nav>li>a{ font-size: 14px; padding-left: 14px; padding-right: 14px; }
@@ -28,6 +39,15 @@
     .sos-box{ margin-top: -248px; }
     .pbanner .ch{ font-size: 32px; }
     .ab-block-list .slick-arrow{ left: 60px; }
+    .pnav{ width: 200px; }
+    .page-cont{ margin-left: 200px; }
+    .ab-info .ab-video{ width: 400px; }
+    .ab-block-list .txts{ padding-left: 35px; padding-right: 35px; }
+    .ab4{ padding-top: 85px; padding-bottom: 80px; }
+    .ab4 .ab-title{ margin-bottom: 55px; }
+    .ab-branch a{ font-size: 14px; margin-left: 10px; height: 58px; line-height: 58px; }
+    .ab-branch{ margin-left: -10px; }
+    .ab-branch li{ margin-bottom: 10px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
@@ -63,6 +83,28 @@
     .ix3{ padding-top: 65px; padding-bottom: 65px; }
     .ix-link h4.nowti{ line-height: 44px; font-size: 14px; }
     .sos-box{ margin-top: 0; transform: translateY(-50%); }
+    .pnav{ position: relative !important; top: 0 !important; border-bottom: 1px solid #ccc; height: 54px; width: 100%; overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .pnav ul{ position: absolute; top: 0; left: 0; min-width: 100%; text-align: center; white-space: nowrap; letter-spacing: -6px; }
+    .pnav li{ display: inline-block; vertical-align: bottom; letter-spacing: 0; }
+    .pnav a{ padding: 15px 20px; }
+    .page-cont{ margin-left: 0; }
+    .bread-nav{ background: none; padding: 10px 5% 0; }
+    .ab1{ padding-top: 80px; padding-bottom: 90px; }
+    .ab-info .ab-video{ width: 320px; }
+    .ab-platform-list .freeTx{ font-size: 14px; }
+    .ab-platform-list .ma{ margin-left: 30px; }
+    .ab-platform-list{ margin-left: -30px; }
+    .ab-platform-list .ti{ font-size: 20px; }
+    .ab-platform-list .num{ font-size: 36px; }
+    .ab2 .ab-title{ margin-bottom: 55px; }
+    .ab-block-list .freeTx, .ab-block-list .txts{ height: auto; }
+    .ab-block-list .pai{ display: none; }
+    .ab-block-list .item{ background: #fff; }
+    .ab-block-list .txts{ padding: 35px 5%; }
+    .ab-block-list .item + .item{ margin-top: 2px; }
+    .ab-block-list{ padding-top: 0; }
+    .ab3 .ab-title{ padding: 0; margin-bottom: 55px; }
+    .ab3{ padding-bottom: 90px; padding-left: 5%; padding-right: 5%; }
 }
 @media screen and (max-width:861px) {
     .banner .ti{ font-size: 32px; }
@@ -78,6 +120,13 @@
     .ix-pro .slick-next{ background: #f2f2f2; }
     .ix-link li{ width: 50%; margin-bottom: 15px; }
     .ix3{ padding-bottom: 50px; }
+    .ab-info .ab-video{ width: 256px; }
+    .ab-platform-list li{ width: 50%; margin-bottom: 30px; }
+    .ab-platform-list li:nth-child(2n-1){ clear: both; }
+    .ab-branch li{ width: 33.33%; }
+}
+@media screen and (max-width:641px) {
+    .ab-info .ab-video{ float: none; width: 100%; margin: 0 0 35px; }
 }
 @media screen and (max-width:601px) {
     .banner .ti{ font-size: 26px; }
@@ -102,6 +151,15 @@
     .ib-more{ width: 38px; height: 38px; line-height: 34px; }
     .sos-box .tx1{ margin-top: 5.67vw; font-size: 24px; }
     .pbanner .ch{ font-size: 26px; }
+    .ab-title .ti{ font-size: 26px; }
+    .ab-title .line{ width: 9.17vw; margin-top: 3.33vw; }
+    .ab4 .ab-title, .ab3 .ab-title, .ab2 .ab-title, .ab1 .ab-title{ margin-bottom: 9.17vw; }
+    .ab3, .ab1{ padding-top: 13.33vw; padding-bottom: 15vw; }
+    .ab-info .ab-video{ margin-bottom: 5.83vw; }
+    .ab-platform-list li{ width: 100%; }
+    .ab2{ padding-top: 40px; }
+    .ab-branch li{ width: 50%; }
+    .ab4{ padding-top: 13.33vw; padding-bottom: 13.33vw; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
@@ -122,4 +180,18 @@
     .ib-more{ width: 32px; height: 32px; line-height: 28px; }
     .pbanner .ch, .sos-box .tx1{ font-size: 22px; }
     .header .logo{ transform: scale(.65); }
+    .ab-title .ti{ font-size: 22px; }
+    .ab-platform-list .ti{ font-size: 18px; }
+    .ab-platform-list .num{ font-size: 32px; }
+    .ab-platform-list .title{ margin-bottom: 10px; }
+    .ab-block-list .ti{ padding-left: 36px; font-size: 22px; }
+    .ab-block-list .ico{ transform-origin: left center; transform: scale(.8); }
+    .ab-block-list .pai{ display: block; }
+    .ab-block-list .txts{ padding-top: 20px; }
+    .ab-block-list .item+.item{ margin-top: 25px; }
+    .ab-block-list .item{ box-shadow: 0 5px 8px rgba(0,0,0,.1); overflow: visible; }
+    .ab-block-list{ overflow: visible; }
+    .ab-branch a{ height: 48px; margin-left: 5px; line-height: 48px; font-size: 12px; }
+    .ab-branch{ margin-left: -5px; }
+    .ab-branch li{ margin-bottom: 5px; }
 }
