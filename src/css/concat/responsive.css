@@ -24,6 +24,10 @@
     .ix-link{ margin-left: -25px; }
     .ix-link .txts{ height: 125px; padding: 25px 25px 0; }
     .ix-link .txts:before{ left: 25px; height: 8px; }
+    .sos-box .tx1{ margin-top: 34px; font-size: 26px; }
+    .sos-box{ margin-top: -248px; }
+    .pbanner .ch{ font-size: 32px; }
+    .ab-block-list .slick-arrow{ left: 60px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
@@ -32,6 +36,7 @@
     .in-cont{ padding-right: 40px; }
     .in-cont .in-hot{ display: none; }
     .ix-news .in-nav{ margin-bottom: 40px; }
+    .ab-block-list .slick-arrow{ left: 40px; }
 }
 @media screen and (max-width:1024px) {
     .header, .mtop{ height: 60px; }
@@ -57,6 +62,7 @@
     .ix-link{ margin-left: -15px; }
     .ix3{ padding-top: 65px; padding-bottom: 65px; }
     .ix-link h4.nowti{ line-height: 44px; font-size: 14px; }
+    .sos-box{ margin-top: 0; transform: translateY(-50%); }
 }
 @media screen and (max-width:861px) {
     .banner .ti{ font-size: 32px; }
@@ -94,6 +100,8 @@
     .ix4{ padding-top: 15.83vw; padding-bottom: 15.83vw; }
     .ix-branch .ti{ margin-bottom: 3.83vw; }
     .ib-more{ width: 38px; height: 38px; line-height: 34px; }
+    .sos-box .tx1{ margin-top: 5.67vw; font-size: 24px; }
+    .pbanner .ch{ font-size: 26px; }
 }
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
@@ -112,4 +120,6 @@
     .ix-link li{ margin-bottom: 10px; }
     .ix-link h4.nowti{ line-height: 38px; font-size: 12px; }
     .ib-more{ width: 32px; height: 32px; line-height: 28px; }
+    .pbanner .ch, .sos-box .tx1{ font-size: 22px; }
+    .header .logo{ transform: scale(.65); }
 }

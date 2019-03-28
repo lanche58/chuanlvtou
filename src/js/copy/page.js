@@ -67,24 +67,58 @@ $(window).resize(function () {
 });
 
 $(function () {
-    $('.nav li>a').mouseenter(function() {
-        var $next = $(this).next('.pull-nav'),
-            nextLen = $next.length;
-        if (nextLen) {
-            $(this).addClass('act2');
-            $next.stop().slideDown();
-        }
-    });
 
-    $('.nav li').mouseleave(function() {
-        var $a = $(this).find('a'),
-            _act = $a.hasClass('act2'),
-            $next = $(this).find('.pull-nav');
-        if (_act) {
-            $a.removeClass('act2');
-            $next.stop().slideUp();
+    if (!isMobile && $('.pnav').length) {
+        $('.pnav li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 100*i + 'ms',
+                '-webkit-transition-delay': 100*i + 'ms'
+            });
+        });
+    }
+
+    changePageNav($('.pnav-point'));
+
+    function changePageNav(item) {
+        if (isMobile) { return; }
+        if (!$('.pnav').length) { return; }
+        var st = $(window).scrollTop(),
+            point = item.offset().top - $mtoph,
+            fot = $('.footer').offset().top - w_height;
+        if (st >= point) {
+            $('.pnav').addClass('fix');
+            $('#top').addClass('show');
+        } else {
+            $('.pnav').removeClass('fix');
+            $('#top').removeClass('show');
         }
-    });
+
+        if (st >= fot) {
+            $('.pnav').addClass('hide');
+            $('#top').addClass('change');
+        } else {
+            $('.pnav').removeClass('hide');
+            $('#top').removeClass('change');
+        }
+    }
+    // $('.nav li>a').mouseenter(function() {
+    //     var $next = $(this).next('.pull-nav'),
+    //         nextLen = $next.length;
+    //     if (nextLen) {
+    //         $(this).addClass('act2');
+    //         $next.stop().slideDown();
+    //     }
+    // });
+
+    // $('.nav li').mouseleave(function() {
+    //     var $a = $(this).find('a'),
+    //         _act = $a.hasClass('act2'),
+    //         $next = $(this).find('.pull-nav');
+    //     if (_act) {
+    //         $a.removeClass('act2');
+    //         $next.stop().slideUp();
+    //     }
+    // });
 
 
     
@@ -185,6 +219,7 @@ $(function () {
             $('.pbanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
             $('.pro-banner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
         }
+        changePageNav($('.pnav-point'));
     });
  
 	// Imitation placeholder function

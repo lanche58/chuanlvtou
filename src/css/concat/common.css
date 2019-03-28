@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'DIN-Bold';
+	src: url('../css/DIN-Bold.eot');
+	src: local('☺'), url('../css/DIN-Bold.woff') format('woff'), url('../css/DIN-Bold.ttf') format('truetype'), url('../css/DIN-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ff-1{
+	font-family: 'DIN-Bold';
+}
+
 a {
 	color: #666;
 }
@@ -83,11 +95,11 @@ a {
 	min-height: 600px;
 	/* overflow: hidden; */
 }
-@media screen and (max-width:1366px) {
+/* @media screen and (max-width:1366px) {
 	.container {
 		min-height: 300px;
 	}
-}
+} */
 /* pw */
 .pw { width: 1280px; margin: 0 auto; }
 @media screen and (max-width:1366px) {

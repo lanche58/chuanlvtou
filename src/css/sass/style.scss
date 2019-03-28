@@ -48,7 +48,7 @@
 
 .page-pa{ padding-left: 80px; padding-right: 80px; }
 
-.footer{ background: $fc1; padding-top: 63px; padding-bottom: 94px - 6px; line-height: 24px;
+.footer{ position: relative; z-index: 99; background: $fc1; padding-top: 63px; padding-bottom: 94px - 6px; line-height: 24px;
     .logo{ width: 198px; }
     .f-nav{ margin-top: 40px; padding-top: 46px - 3px; border-top: 1px solid $hc4; }
     .b{ margin-top: 48px - 12px; }
@@ -307,3 +307,153 @@
 }
 
 .ib-more{ @include c(42px); border: 2px solid #fff; @include bs; text-align: center; font-weight: bold; font-size: 8px; line-height: 42px - 4px; @include mt3; }
+
+.sos-box{
+    position: fixed; top: 50%; margin-top: -(522px / 2); left: 10%; right: 10%; text-align: center; color: $mc1;
+    img{ max-width: 90%; vertical-align: bottom; }
+    .tx1{ margin-top: 75px - 21px; line-height: 1.4; font-weight: bold; font-size: 30px; }
+    a{ width: 106px; height: 38px; background: $mc1; line-height: 38px; font-size: 12px; color: #fff; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+            }
+        } 
+    }
+    .tx2{ margin-top: -(13px - 9px); }
+    .fib{ margin-top: 22px - 7px; }
+}
+
+.pbanner{
+    .txts{ position: absolute; top: 0; bottom: 0; left: 5%; right: 5%; text-align: center; color: #fff; }
+    .ch{ font-weight: bold; font-size: 40px; }
+}
+
+.page-cont{ margin-left: 280px; }
+
+.pnav-point{ position: relative; }
+
+.pnav{ position: absolute; left: 0; top: 0; bottom: 0; width: 280px; background: #fff; line-height: 24px; 
+    li{ @include mt6; }
+    a{ display: block; padding: (60px - 24px) / 2 5%; text-align: center; 
+        &.act{ background: $mc1; font-weight: bold; color: #fff; }
+        @media screen and (min-width:1025px) {
+            &:not(.act):hover{ color: $mc1; font-weight: bold; }
+        }
+    }
+    &.fix{ position: fixed; top: 80px; }
+    &.hide{
+        li{ transform: translateX(-100%); @include hide; }
+    }
+}
+
+.bread-nav{
+    line-height: 24px; padding: (60px - 24px) / 2 35px; background: #fff;
+    .icon{ @include di; margin-right: 10px; color: $fc3; @include mt3; }
+    a{
+        &.act{ color: $mc1; }
+        @media screen and (min-width:1025px) {
+            &:not(.act):hover{ color: $mc1; 
+                .icon{  color: $mc1; }
+            }
+        }
+    }
+}
+
+.ab-info{
+    .ab-video{ width: 500px; margin-right: (70 / 1480) * 100%; float: left; }
+    .wrap{ padding-right: (240 - 80) / 1480 * 100%; }
+    .ab-en{ margin-top: 34px - 7px; }
+}
+
+.ab-video{
+    position: relative; cursor: pointer;
+    .pai{ padding-bottom: (365 / 500) * 100%; 
+        &:after{ @include ba; @include tblr; @include b5; }
+    }
+}
+
+.btn-video{
+    position: absolute; top: 50%; left: 50%; margin: -22px 0 0 -22px; width: 44px; height: 44px; color: $mc1; 
+    &:before, &:after{ @include ba; @include tblr; border-radius: 50%; }
+    &:after{ background: #fff; }
+    &:before{ background: $mc1; animation: light 2s linear infinite; }
+    .sj-r{ position: absolute; z-index: 9; top: 50%; left: 50%; margin: -5px 0 0 -4px; border-top-width: 5px; border-bottom-width: 5px; border-left-width: 8px; }
+}
+
+@keyframes light{
+    0%{ transform: scale(.5); opacity: 1; }
+    100%{ transform: scale(2); opacity: 0; }
+}
+
+.ab-title{
+    .ti{ font-size: 30px; color: $fc1; }
+    .line{ display: block; margin-top: 20px; width: 55px; height: 3px; background: $mc1; }
+}
+
+.ab1{
+    padding-top: (145 / 1640) * 100%;
+    padding-bottom: (130 / 1640) * 100%;
+    .ab-title{ margin-bottom: 75px; } 
+}
+
+.ab2{ background: #fff; padding-top: (110 - 5) / 1640 * 100%; padding-bottom: (110 - 5) / 1640 * 100%;
+    .ab-title{ margin-bottom: 71px - 6px; }
+}
+
+.ab-platform-list{
+    margin-left: -65px;
+    li{ width: 33.33%; float: left; }
+    .ma{ margin-left: 65px; }
+    .title{ margin-bottom: 27px - 10px; overflow: hidden; }
+    .num{ float: left; margin-right: 10px; font-size: 46px; font-weight: bold; color: $mc1; font-style: italic; line-height: 1; }
+    .ti{ padding-top: (46px - 36px) / 2; font-size: 26px; color: $fc1; overflow: hidden; }
+    .freeTx{ font-size: 16px; }
+}
+
+.ab-block-list{
+    padding-top: 40px;
+    .pai{ padding-bottom: (300 / 548) * 100%; }
+    .txts{ padding: 35px 14.6% 0; height: 480px; @include bs; }
+    .ti{ position: relative; margin-bottom: 20px; padding-left: 46px; font-size: 26px; color: $fc1; }
+    .ico{ position: absolute; left: 0; top: 50%; margin-top: -20px; width: 40px; height: 40px; background-position: left center; }
+    .freeTx{ font-size: 16px; height: 11 * 30px; @include sy; }
+    .item{
+        transition: background 400ms;
+        &:after{ @include hl($mc1, 10px); }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: #fff;
+                &:after{ @include hlw; }
+            }
+        }
+    }
+    .slick-arrow{ right: auto; left: 80px; bottom: auto; top: 0; }
+    .slick-next{ margin-left: 40px; }
+}
+
+.ab3{
+    padding-top: 80px;
+    .ab-title{ margin-bottom: 53px - 7px; }
+}
+
+.ab4{
+    background: #fff; padding-bottom: 85px - 15px; padding-top: 100px;
+    .ab-title{ margin-bottom: 70px; }
+}
+
+.ab-branch{
+    margin-left: -15px;
+    li{ width: 25%; float: left; margin-bottom: 15px; }
+    a{ display: block; padding: 0 10px; margin-left: 15px; background: $hc3; height: 68px; font-size: 16px; text-align: center; line-height: 68px; 
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1; color: #fff; }
+        }
+    }
+}
+
+#top{
+    position: fixed; left: (280px - 70px) / 2; bottom: 80px; z-index: 299; padding-top: 6px; width: 70px; height: 50px; font-size: 12px; text-align: center; color: $fc3; @include bs; line-height: 1; transform: translateY(100%); cursor: pointer; @include hide; @include mt4;
+    .sj{ display: block; margin: 0 auto 10px; border-left-width: 9px; border-right-width: 9px; border-bottom-width: 16px; }
+    &.show{ transform: none; @include show; }
+    &.change{ background: $mc1; background: $mco2; color: #fff; }
+}
