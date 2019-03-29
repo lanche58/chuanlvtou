@@ -979,6 +979,19 @@ a.pswp__share--download:hover{background:#ddd}
 #top .sj{display:block;margin:0 auto 10px;border-left-width:9px;border-right-width:9px;border-bottom-width:16px}
 #top.show{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none;opacity:1;visibility:visible}
 #top.change{background:#c82126;background:rgba(200,33,38,.8);color:#fff}
+@media screen and (min-width:1025px){
+#top:not(.change):hover{color:#c82126}
+}
+.ab5 .ab-video .pai:after{display:none}
+.ab5 .ab-en{position:relative;z-index:9;text-align:right;-webkit-transform:translateY(-109px);-moz-transform:translateY(-109px);-ms-transform:translateY(-109px);transform:translateY(-109px);margin-top:27px}
+.ab5 .ab-en img{vertical-align:bottom;max-width:100%}
+.ab-business li{width:16.66%;float:left}
+.ab-business li+li{position:relative}
+.ab-business li+li:before{content:"";position:absolute;left:0;top:50%;margin-top:-19px;width:1px;height:38px;background:#f2f2f2}
+.ab-business .ico{display:block;margin-bottom:10px;height:60px}
+.ab-business .name{text-align:center;font-size:16px}
+.ab6{background:#fff;padding-top:80px;padding-bottom:80px}
+.ab6 .ab-title{margin-bottom:70px}
 @media screen and (max-width:1600px){
 .in-cont .in-hot{width:325px}
 .in-list a+a{margin-top:13px}
@@ -987,6 +1000,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ab-block-list .txts{padding-left:40px;padding-right:40px}
 .ab-block-list .freeTx{font-size:14px;height:260px}
 .ab-block-list .txts{height:410px}
+.ab5 .ab-en{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none}
 }
 @media screen and (max-width:1440px){
 .ab1 .ab-title{margin-bottom:55px}
@@ -1029,6 +1043,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ab-branch a{font-size:14px;margin-left:10px;height:58px;line-height:58px}
 .ab-branch{margin-left:-10px}
 .ab-branch li{margin-bottom:10px}
+#top{left:65px}
 }
 @media screen and (max-width:1201px){
 .header .nav>li>a{padding-left:10px;padding-right:10px}
@@ -1141,6 +1156,7 @@ a.pswp__share--download:hover{background:#ddd}
 .ab2{padding-top:40px}
 .ab-branch li{width:50%}
 .ab4{padding-top:13.33vw;padding-bottom:13.33vw}
+.ab5 .ab-en{margin-top:4.5vw}
 }
 @media screen and (max-width:481px){
 .navMobile dd>a{padding:16px 0;font-size:16px}

@@ -975,3 +975,50 @@
     background: #c82126;
     background: rgba(200, 33, 38, 0.8);
     color: #fff; }
+  @media screen and (min-width: 1025px) {
+    #top:not(.change):hover {
+      color: #c82126; } }
+
+.ab5 .ab-video .pai:after {
+  display: none; }
+
+.ab5 .ab-en {
+  position: relative;
+  z-index: 9;
+  text-align: right;
+  transform: translateY(-109px);
+  margin-top: 27px; }
+  .ab5 .ab-en img {
+    vertical-align: bottom;
+    max-width: 100%; }
+
+.ab-business li {
+  width: 16.66%;
+  float: left; }
+  .ab-business li + li {
+    position: relative; }
+    .ab-business li + li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -19px;
+      width: 1px;
+      height: 38px;
+      background: #f2f2f2; }
+
+.ab-business .ico {
+  display: block;
+  margin-bottom: 10px;
+  height: 60px; }
+
+.ab-business .name {
+  text-align: center;
+  font-size: 16px; }
+
+.ab6 {
+  background: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .ab6 .ab-title {
+    margin-bottom: 70px; }

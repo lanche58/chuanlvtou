@@ -1,0 +1,196 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "about": "act"
+})
+@@include('./pbanner.html',{
+    "img": "ab_banner.jpg",
+    "ch": "旅投创新"
+})
+<div class="container page-bg pnav-point">
+    <div class="pnav">
+        <ul>
+            <li><a href="about.html">关于旅投</a></li>
+            <li><a href="about1.html" class="act">关于创新</a></li>
+            <li><a href="about2.html">企业文化</a></li>
+            <li><a href="about3.html">社会责任</a></li>
+            <li><a href="about4.html">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="page-cont">
+        <div class="bread-nav"><a href="index.html"><i class="icon iconfont icon-shouye"></i>首页</a>&nbsp;-&nbsp;<a href="about.html">旅投创新</a>&nbsp;-&nbsp;<a href="about1.html" class="act">关于创新</a></div>
+        <div class="ab1 ab5 page-pa">
+            <div class="ab-title">
+                <h3 class="ti">四川省旅游投资集团有限责任公司</h3>
+                <span class="line"></span>
+            </div>
+            <div class="ab-info clearfix">
+                <div class="ab-video scapic">
+                    <div class="pai"><img src="img/ab_i1.jpg" alt=""></div>
+                </div>
+                <div class="freeTx">
+                    <div class="wrap">
+                        <p style="font-size: 16px;">四川旅投旅游创新开发有限责任公司（以下简称：旅投创新公司）于2017年11月正式注册成立，是四川省旅游投资集团有限责任公司（以下简称：旅投集团）的全资子公司，是旅投集团综合景区投资运营管理平台，肩负着旅投集团在旅游全产业链优质旅游资源的统筹协调和开发拓展任务。</p>
+                        <br>
+                        <p style="font-size: 16px;">旅投创新公司以发展全域旅游为抓手，精准对接国家“一带一路”倡议，以打造中国旅游四川品牌，建立大旅游发展格局为主要目标，通过充分发挥平台作用，整合省内外旅游资源，创新全域旅游投融资模式，实现多板块联动。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ab-en"><img src="images/en2.png" alt=""></div>
+        </div>
+        <!-- ab1 -->
+        <div class="ab6 page-pa">
+            <div class="ab-title">
+                <h3 class="ti">业务板块</h3>
+                <span class="line"></span>
+            </div>
+            <ul class="ab-business clearfix">
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico4.png);"></i>
+                    <p class="name">投资景区</p>
+                </li>
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico5.png);"></i>
+                    <p class="name">康养享乐</p>
+                </li>
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico6.png);"></i>
+                    <p class="name">田园综合体</p>
+                </li>
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico7.png);"></i>
+                    <p class="name">民宿连锁</p>
+                </li>
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico8.png);"></i>
+                    <p class="name">文化娱乐创意</p>
+                </li>
+                <li>
+                    <i class="ico" style="background-image: url(img/ab_ico9.png);"></i>
+                    <p class="name">生物医学</p>
+                </li>
+            </ul>
+        </div>
+        <!-- ab6 -->
+    </div>
+</div>
+<!-- container -->
+<div id="top"><i class="sj sj-t"></i>返回顶部</div>
+@@include('./footer.html')
+<div class="vwrap">
+    <div class="videobtg"></div>
+    <div class="videobox">
+        <div id="videobox"></div>
+        <div class="close"><i></i></div>
+    </div>
+</div>
+<script src="js/video/player.mini.js"></script>
+<script src="js/page.js"></script>
+<script>
+    function indexBox() {
+        if(!isMobile){
+            $('.banner').css({ height: w_height - $mtoph });
+            $('.banner .item').css({ height: w_height - $mtoph });
+            setImgMax($('.banner .pic2'), 1920, 950, w_width, w_height - $mtoph);
+        }else{
+            $('.banner').css({ height: 'auto' });
+            $('.banner .item').css({ height: 'auto' });
+            $('.banner .pic2').attr({ 'style': '' });
+        }
+    }
+    indexBox();
+    $(window).resize(function() {
+        indexBox();
+    });
+    $(function(){
+        function removeSlick() {
+            var isSlick = $('.ab-block-list').hasClass('slick-slider');
+            if (w_width > 1024 && isSlick === false) {
+                $('.ab-block-list').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay: true,
+                    autoplaySpeed: 5000
+                });
+            } else if (w_width <= 1024 && isSlick == true) {
+                $('.ab-block-list').slick('unslick');
+            }
+        };
+        removeSlick();
+        $(window).resize(function() {
+            removeSlick();
+        });
+
+
+
+
+        $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
+            $('.banner .item').first().addClass('active');
+        });
+        $('.banner').slick({
+            speed: 1000,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            pauseOnHover: false
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.banner .item').removeClass('active');
+            $('.banner .item').eq(nextSlide).addClass('active');
+        });
+        $('.recruitment-notice-list').slick({
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            vertical: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 2000,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+        $('.ip-list').slick({
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+        function changeNews(i) {
+            $('.in-nav li').removeClass('act').eq(i).addClass('act');
+            $('.in-cont li').hide().eq(i).show();
+        }
+        changeNews(0);
+        $('.in-nav li').bind(_click, function() {
+            var index = $(this).index();
+            changeNews(index);
+        });
+        $('.ix-pro').slick({
+            speed: 1000,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            pauseOnHover: false
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.ix-pro .item').removeClass('active');
+            $('.ix-pro .item').eq(nextSlide).addClass('active');
+        });
+        $('.ix-link li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 200*i + 'ms',
+                '-webkit-transition-delay': 200*i + 'ms'
+            });
+        });
+    })
+</script>
+</body>
+</html>

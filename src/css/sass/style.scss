@@ -458,4 +458,28 @@
     .sj{ display: block; margin: 0 auto 10px; border-left-width: 9px; border-right-width: 9px; border-bottom-width: 16px; }
     &.show{ transform: none; @include show; }
     &.change{ background: $mc1; background: $mco2; color: #fff; }
+    @media screen and (min-width:1025px) {
+        &:not(.change):hover{ color: $mc1; }
+    }
+}
+
+.ab5{
+    .ab-video .pai:after{ display: none; }
+    .ab-en{ position: relative; z-index: 9; text-align: right; transform: translateY(-27px - 57px - 25px); margin-top: 27px;
+        img{ vertical-align: bottom; max-width: 100%; }
+    }
+}
+
+.ab-business{
+    li{ width: 16.66%; float: left; 
+        + li{ position: relative; 
+            &:before{ @include ba; left: 0; top: 50%; margin-top: -(38px / 2); width: 1px; height: 38px; background: $hc3; }
+        }
+    }
+    .ico{ display: block; margin-bottom: 10px; height: 60px; }
+    .name{ text-align: center; font-size: 16px; }
+}
+
+.ab6{ background: #fff; padding-top: 80px; padding-bottom: 80px;
+    .ab-title{ margin-bottom: 70px; }
 }
