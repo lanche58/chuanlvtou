@@ -465,8 +465,11 @@
 
 .ab5{
     .ab-video .pai:after{ display: none; }
-    .ab-en{ position: relative; z-index: 9; text-align: right; transform: translateY(-27px - 57px - 25px); margin-top: 27px;
-        img{ vertical-align: bottom; max-width: 100%; }
+    .ab-info{ position: relative; 
+        .freeTx{ position: relative; }
+    }
+    .ab-en{ @include plr; bottom: 25px; margin: 0; text-align: right; 
+        > img{ vertical-align: bottom; max-width: 100%; }
     }
 }
 
@@ -475,6 +478,11 @@
         + li{ position: relative; 
             &:before{ @include ba; left: 0; top: 50%; margin-top: -(38px / 2); width: 1px; height: 38px; background: $hc3; }
         }
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1; 
+                .ico{ background-position: center bottom; }
+            }
+        }
     }
     .ico{ display: block; margin-bottom: 10px; height: 60px; }
     .name{ text-align: center; font-size: 16px; }
@@ -482,4 +490,74 @@
 
 .ab6{ background: #fff; padding-top: 80px; padding-bottom: 80px;
     .ab-title{ margin-bottom: 70px; }
+}
+
+.ab-pa{ padding-right: (160 / 1480) * 100%; }
+
+.ab-tx{
+    padding-top: 90px; padding-bottom: 90px;
+    .l{ width: (498 / 1305) * 100%; }
+    .r{ width: ( 760 / 1305) * 100%; }
+}
+
+.ab-works{
+    margin-left: -60px;
+    li{ width: 33.33%; float: left; }
+    .ma{ margin-left: 60px; }
+    .num{ margin-bottom: 26px - 9px; font-weight: bold; font-style: italic; line-height: 1; color: $mc1; font-size: 46px; }
+    .freeTx{ font-size: 16px; }
+}
+
+.ab7{
+    background: #fff; padding-top: 90px;
+    .ab-title{ margin-bottom: 55px; }
+    .fixbg{ margin-top: 80px; padding-bottom: (510 / 1640) * 100%; }
+}
+
+.ab8{
+    padding-top: 90px; padding-bottom: (160 / 1640) * 100%;
+    .ab-title{ margin-bottom: 55px; }
+}
+
+.respo-list{
+    margin-left: -40px;
+    li{ width: 50%; float: left; margin-bottom: 40px; }
+    a{ display: block; background: #fff; margin-left: 40px; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                box-shadow: 3px 5px 8px rgba(0,0,0,.1);
+                .respo-more{ background: $mc1; color: #fff; border-color: $mc1; }
+            }
+        }
+    }
+    .respo-date{ position: absolute; left: 35px; bottom: 0; }
+    .pai{ padding-bottom: (340 / 550) * 100%; }
+    .txts{ height: 215px; padding: 35px 35px 0; @include bs; overflow: hidden; }
+    .nowti{ margin-bottom: 8px; font-size: 18px; color: $fc1; }
+    .tx{ margin-bottom: 30px; height: 24px * 2; }
+    .respo-more{ color: $fc3; }
+}
+
+.respo-date{ position: relative; width: 60px; height: 60px; padding-top: 7px; background: $mc1; @include bs; font-size: 30px; line-height: 1; text-align: center; color: #fff; 
+    .y{ @include plr; bottom: 7px; font-size: 12px; }
+}
+
+.respo-more{ width: 120px; border-radius: 20px; line-height: 36px - 2px; @include bs; border: 1px solid $hc1; text-align: center; font-size: 12px; color: $fc3; @include mt3;
+    .icon{ @include di; font-size: 10px; margin-left: 4px; }
+}
+
+.pager{
+    a{ width: 40px; height: 40px; line-height: 40px; background: #fff; color: $fc3; 
+        + a{ margin-left: 10px; }
+        &.act{ background: $mc1; color: #fff; }
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1; color: #fff; }
+        }
+    }
+    .icon{ font-size: 12px; }
+}
+
+.ab9{
+    padding-top: 80px; padding-bottom: 90px;
+    .respo-list{ margin-bottom: 55px - 40px; } 
 }
