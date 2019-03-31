@@ -1,3 +1,12 @@
+@media screen and (max-width:1700px) {
+    .pro3 .pro-cont .pw{ padding-right: 119px; }
+    .pw3, .str5{ width: 1138px; }
+    .coop-list .lg, .coop-list .freeTx{ padding-left: 40px; padding-right: 40px; }
+    .coop-list .ma{ margin-left: 40px; }
+    .coop-list{ margin-left: -40px; }
+    .coop-list li{ margin-bottom: 40px; }
+    .str5{ padding-bottom: 50px; }
+}
 @media screen and (max-width:1600px) {
     .in-cont .in-hot{ width: 325px; }
     .in-list a+a { margin-top: 13px; }
@@ -6,7 +15,11 @@
     .ab-block-list .txts{ padding-left: 40px; padding-right: 40px; }
     .ab-block-list .freeTx{ font-size: 14px; height: 260px; }
     .ab-block-list .txts{ height: 410px; }
-    /* .ab5 .ab-en{ transform: none; } */
+    .pro-cont .pw{ padding-left: 10.9%; padding-right: 10.9%; }
+    .pro3 .pro-cont .pw{ padding-right: 10.9%; }
+    .str-business-list .txts{ padding: 50px 10% 0; }
+    .str-business-list .freeTx{ max-height: 200px; }
+    
 }
 @media screen and (max-width:1440px) {
     .ab1 .ab-title{ margin-bottom: 55px; }
@@ -14,6 +27,30 @@
     .ab-platform-list{ margin-left: -45px; }
     .ab-platform-list .ti{ font-size: 24px; }
     .ab-platform-list .num{ font-size: 42px; }
+    .str5, .pw, .pw3{ width: 1000px; }
+    .party-news-list .item>a, .party-news-list .nowti{ line-height: 30px; }
+    .party-news-list{ padding-top: 30px; }
+    .party-news-list .slick-dots{ margin-top: 20px; }
+    .party-news .txts{ padding-top: 35px; font-size: 14px; }
+    .party-news .txts p.tx{  line-height: 24px !important; height:48px; }
+    .party-news .txts .more{ margin-top: 45px; }
+    .party-news .txts .line{ margin: 20px 0 17px; }
+    .par3 .ab-title, .par2 .ab-title{ padding-left: 0; padding-right: 0; width: 1000px; margin-left: auto; margin-right: auto; }
+    .issue-list a{ padding-left: 40px; padding-right: 40px; }
+    .news-list li{ margin-bottom: 40px; }
+    .news-list{ margin-left: -40px; }
+    .news-list a{ margin-left: 40px; }
+    .ab9 .news-list{ margin-bottom: 30px; }
+    .branch-list li{ margin-bottom: 35px; }
+    .branch-list{ margin-left: -35px; }
+    .branch-list a{ margin-left: 35px; }
+    .par2 .branch-list{ margin-bottom: 35px; }
+    .pro-list .txts{ padding-left: 35px; padding-right: 35px; }
+    .asset-list .picbox{ width: 472px; }
+    .asset-list .txts{ padding-top: 85px; }
+    .asset-list .tx{ margin-bottom: 60px; }
+    .coop-list .freeTx{ font-size: 14px; }
+
 }
 @media screen and (max-width:1366px) {
     .header .nav>li>a{ font-size: 14px; padding-left: 14px; padding-right: 14px; }
@@ -59,6 +96,54 @@
     .respo-list{ margin-left: -30px; }
     .respo-list li{ margin-bottom: 30px; }
     .ab9 .respo-list{ margin-bottom: 25px; }
+    .pw, .pw2{ width: 800px; max-width: 90%; }
+    .cta-list .txts{ padding-right: 0; }
+    #map{ height: 480px; margin-top: 85px; }
+    .ab11{ padding-top: 85px; }
+    .par3 .ab-title, .par2 .ab-title, .pw3{ width: 800px; }
+    .party-news .picbox{ margin-right: 35px; }
+    .party-news .txts, .party-news-list{ padding-right: 35px; }
+    .party-news-list .item>a, .party-news-list .nowti{ line-height: 26px; }
+    .party-news-list{ padding-top: 20px; }
+    .party-news-list .slick-dots{ margin-top: 10px; }
+    .party-news .txts .date{ font-size: 12px; }
+    .party-news .txts h3.tx{ font-size: 18px; height: 52px; line-height: 26px !important; }
+    .party-news .txts .line{ margin: 15px 0 12px; }
+    .party-news .txts .more{ margin-top: 25px; }
+    .party-news .txts{ padding-top: 25px; }
+    .party-item+.party-item{ margin-top: 60px; }
+    .par3 .ab-title, .par2 .ab-title{ margin-bottom: 55px; }
+    .issue-list a{ padding-left: 30px; padding-right: 30px; }
+    .news-list li{ margin-bottom: 30px; }
+    .news-list{ margin-left: -30px; }
+    .news-list a{ margin-left: 30px; }
+    .ab9 .news-list{ margin-bottom: 40px; }
+    .branch-list li{ margin-bottom: 25px; }
+    .branch-list{ margin-left: -25px; }
+    .branch-list a{ margin-left: 25px; }
+    .par2 .branch-list{ margin-bottom: 45px; }
+    .pro-list .tx{ font-size: 14px; line-height: 24px !important; height: 48px; }
+    .pro-list .nowti{ font-size: 22px; }
+    .pro-list .txts{ padding-top: 30px; height: 215px; }
+    .pro-cont .pw{ width: 100%; }
+    .pro-pa{ padding-left: 60px; }
+    .innovate-list .freeTx{ font-size: 14px; }
+    .innovate-list .ti{ font-size: 22px; }
+    .innovate-list .ti .num{ margin-bottom: -6px; font-size: 38px; }
+    .innovate-list .txts{ height: 260px; margin-top: -130px; padding-left: 40px; padding-right: 40px; width: 518px; }
+    .innovate-list li+li{ margin-top: 60px; }
+    .str-business-list .freeTx{ font-size: 14px; }
+    .str-business-list .ti{ font-size: 22px; }
+    .str-business-list .ico{ transform-origin: left center; transform: scale(.9); }
+    .str-business-list .freeTx{ max-height: 180px; }
+    .str-business-list .txts{ padding-top: 40px; height: 300px; }
+    .layout-list .freeTx{ padding-left: 5%; padding-right: 5%; }
+    .str5{ width: 800px; padding-bottom: 60px; }
+    .coop-list .ma{ margin-left: 30px; }
+    .coop-list{ margin-left: -30px; }
+    .coop-list li{ margin-bottom: 30px; }
+    .coop-list .freeTx, .coop-list .lg{ padding-left: 30px; padding-right: 30px; }
+    .coop-list .freeTx{ padding-top: 20px; }
 }
 @media screen and (max-width:1201px) {
     .header .nav>li>a{ padding-left: 10px; padding-right: 10px; }
@@ -68,6 +153,7 @@
     .in-cont .in-hot{ display: none; }
     .ix-news .in-nav{ margin-bottom: 40px; }
     .ab-block-list .slick-arrow{ left: 40px; }
+    .pro-pa{ padding-left: 40px; }
 }
 @media screen and (max-width:1024px) {
     .header, .mtop{ height: 60px; }
@@ -95,7 +181,7 @@
     .ix-link h4.nowti{ line-height: 44px; font-size: 14px; }
     .sos-box{ margin-top: 0; transform: translateY(-50%); }
     .pnav{ position: relative !important; top: 0 !important; border-bottom: 1px solid #ccc; height: 54px; width: 100%; overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .pnav ul{ position: absolute; top: 0; left: 0; min-width: 100%; text-align: center; white-space: nowrap; letter-spacing: -6px; }
+    .pnav ul{ position: absolute; top: 0; left: 0; min-width: 100%;  white-space: nowrap; letter-spacing: -6px; }
     .pnav li{ display: inline-block; vertical-align: bottom; letter-spacing: 0; }
     .pnav a{ padding: 15px 20px; }
     .page-cont{ margin-left: 0; }
@@ -116,6 +202,38 @@
     .ab-block-list{ padding-top: 0; }
     .ab3 .ab-title{ padding: 0; margin-bottom: 55px; }
     .ab3{ padding-bottom: 90px; padding-left: 5%; padding-right: 5%; }
+    .nd-b, .nd-t{ padding-left: 0; padding-right: 0; }
+    .nd-t{ padding-top: 90px; }
+    .nd-t .ti{ padding: 0 5%; }
+    .news-back li+li{ border: none; }
+    .par3 .ab-title, .par2 .ab-title, .pw3{ width: 90%; }
+    .party-news .picbox{ width: 460px; }
+    .party-news-list .item>a, .party-news-list .nowti{ line-height: 28px; }
+    .party-news-list{ padding-top: 25px; }
+    .party-news-list .slick-dots{ margin-top: 15px; }
+    .party-news .txts{ padding-top: 35px; }
+    .container{ min-height: 300px; }
+    .pro1{ padding-left: 5%; padding-right: 5%; padding-top: 80px; }
+    .pro-list a{ margin-left: 30px; background: #fff; }
+    .pro-list{ margin-left: -30px; }
+    .pro-list li{ width: 50%; margin-bottom: 30px; }
+    .pro1 .pro-list{ margin-bottom: 40px; }
+    .pbanner .pic2>img{ transform: none !important; }
+    .pro-pa{ padding-left: 5%; }
+    .pro-cont .ti{ padding: 0; }
+    .pw { width: 90%; }
+    .str2{ padding-top: 80px; }
+    .str-business-list .ti{ padding-left: 40px; font-size: 20px; }
+    .str-business-list .ico{ transform: scale(.7); }
+    .str-business-list .txts{ height: 280px; padding-top: 25px; }
+    .str3{ padding-left: 5%; }
+    .str4{ padding: 80px 5% 90px; }
+    .asset-list li + li{ margin-top: 40px; }
+    .asset-list a{ background: #fff; }
+    .asset-list .picbox{ width: 378px; }
+    .asset-list .tx{ margin-bottom: 40px; }
+    .asset-list .txts{ padding-top: 55px; }
+    .str5{ width: 90%; }
 }
 @media screen and (max-width:861px) {
     .banner .ti{ font-size: 32px; }
@@ -148,10 +266,66 @@
     .ab8{ padding-bottom: 90px; }
     .respo-list .txts{ height: 195px; padding: 20px 25px 0; }
     .respo-list .respo-date{ left: 25px; }
-
+    .cta-list .txts{ padding-left: 60px; }
+    .cta-list .title{ width: 165px; }
+    .briefing-list .pic, .party-news .picbox{ display: none; }
+    .party-news .txts, .party-news-list{ padding: 25px 5% 35px; }
+    .party-news-list .slick-dots{ margin-top: 20px; }
+    .party-news .txts{ padding-top: 35px; }
+    .briefing-list a{ padding-left: 25px; padding-right: 25px; }
+    .news-list li{ margin-bottom: 20px; }
+    .news-list{ margin-left: -20px; }
+    .news-list a{ margin-left: 20px; }
+    .ab9 .news-list{ margin-bottom: 50px; }
+    .news-list .nowti{ left: 5%; right: 5%; bottom: 10px; padding-left: 10px; font-size: 14px; line-height: 18px; }
+    .branch-list li{ width: 50%; }
+    .question-list .freeTx{ font-size: 14px; padding-left: 30px; padding-right: 30px; }
+    .pro-list .txts{ padding: 20px 25px 0; height: 185px; }
+    .pro-list .nowti{ font-size: 18px; }
+    .pro-list .tx{ margin-bottom: 20px; }
+    .pro-pa .pro-title{ width: 100%; float: none; padding: 0; text-align: center; margin-bottom: 35px; }
+    .pro-pa{ padding-right: 5%; }
+    .pro-cont .pw{ padding-left: 5%; padding-right: 5%; }
+    .pro3 .pro-cont .pw{ padding-right: 5%; }
+    .innovate-list .txts{ position: static; width: 100%; height: auto; padding-left: 5%; padding-right: 5%; margin: 0; }
+    .innovate-list li{ padding-right: 0; box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .innovate-list li:nth-child(2n){ padding-left: 0; }
+    .innovate-list li+li{ margin-top: 40px; }
+    .str2{ padding-left: 5%; padding-right: 5%; padding-bottom: 90px; }
+    .str-business-list .pai{ display: none; }
+    .str-business-list li{ width: 100%; background: #fff; box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .str-business-list li + li{ margin-top: 40px; }
+    .str-business-list .freeTx{ max-height: none; }
+    .str-business-list .txts{ padding: 35px 5%; height: auto; }
+    .layout-list .pro-title{ float: none; width: 100%; margin-bottom: 35px; }
+    .asset-list .picbox{ width: 278px; }
+    .asset-list .nowti{ font-size: 24px; }
+    .asset-list .tx{ margin-bottom: 30px; font-size: 14px; line-height: 24px !important; height: 48px; }
+    .asset-list .respo-more{ width: 120px; line-height: 34px; }
+    .asset-list .txts{ padding-top: 40px; }
+    .coop-list li{ width: 100%; float: none; }
+    .coop-list .ma{ height: auto; padding-bottom: 40px; box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .coop-list .freeTx, .coop-list .lg{ padding-left: 5%; padding-right: 5%; }
 }
 @media screen and (max-width:641px) {
     .ab-info .ab-video{ float: none; width: 100%; margin: 0 0 35px; }
+    .cta-list .title{ width: 100%; border-bottom: 1px solid #ccc; margin-bottom: 15px; padding-bottom: 10px; float: none; }
+    .cta-list .txts{ padding-left: 0; min-height: 0; border: none; }
+    .cta-list .title .ch{ margin-bottom: 0; }
+    .cta-list .tel{ padding-top: 0; }
+    .briefing-list li{ width: 100%; }
+    .briefing-list a{ padding-left: 5%; padding-right: 5%; box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .briefing-list .pic{ display: block; margin-right: 20px; }
+    .issue-list li{ width: 100%; }
+    .issue-list a{ padding-left: 5%; padding-right: 5%; }
+    .layout-list .freeTx{ font-size: 14px; }
+    .layout-list .pic{ width: 220px; }
+    .layout-list .pic img{ height: 100%; object-fit: cover; }
+    .layout-list .txts{ height: 120px; }
+    .asset-list .picbox{ width: 238px; }
+    .asset-list .nowti{ padding-left: 15px; font-size: 20px; }
+    .asset-list .txts{ padding-top: 30px; }
+    .asset-list .tx{ margin-bottom: 25px; }
 }
 @media screen and (max-width:601px) {
     .banner .ti{ font-size: 26px; }
@@ -178,16 +352,16 @@
     .pbanner .ch{ font-size: 26px; }
     .ab-title .ti{ font-size: 26px; }
     .ab-title .line{ width: 9.17vw; margin-top: 3.33vw; }
-    .ab8 .ab-title, .ab7 .ab-title, .ab6 .ab-title, .ab4 .ab-title, .ab3 .ab-title, .ab2 .ab-title, .ab1 .ab-title{ margin-bottom: 9.17vw; }
-    .ab3, .ab1{ padding-top: 13.33vw; padding-bottom: 15vw; }
+    .ab9 .party-nav, .par2 .ab-title, .par3 .ab-title, .ab8 .ab-title, .ab7 .ab-title, .ab6 .ab-title, .ab4 .ab-title, .ab3 .ab-title, .ab2 .ab-title, .ab1 .ab-title{ margin-bottom: 9.17vw; }
+    .par2, .ab3, .ab1{ padding-top: 13.33vw; padding-bottom: 15vw; }
     .ab-info .ab-video{ margin-bottom: 5.83vw; }
     .ab-platform-list li{ width: 100%; }
     .ab2{ padding-top: 40px; }
     .ab-branch li{ width: 50%; }
-    .ab4{ padding-top: 13.33vw; padding-bottom: 13.33vw; }
+    .par3, .ab4{ padding-top: 13.33vw; padding-bottom: 13.33vw; }
     .ab5 .ab-en{ padding-top: 4.5vw; }
     .ab6{ padding-top: 13.33vw; padding-bottom: 8.33vw; }
-    .ab9, .ab8, .ab-tx{ padding-top: 13.33vw; padding-bottom: 15vw; }
+    .str4, .str3, .str2, .str1, .pro1, .par1, .ab9, .ab8, .ab-tx{ padding-top: 13.33vw; padding-bottom: 15vw; }
     .ab-works li{ width: 100%; }
     .ab-works .freeTx{ font-size: 14px; }
     .ab-works .num{ margin-bottom: 2.83vw; font-size: 36px; }
@@ -196,7 +370,49 @@
     .respo-list li{ width: 100%; }
     .respo-list .txts{ padding-left: 5%; padding-right: 5%; }
     .respo-list .respo-date{ left: 5%; }
-}
+    .nd-t{ padding-top: 15vw; }
+    .nd-b{ padding-top: 10vw; padding-bottom: 20vw; }
+    .ab11{ padding-top: 14.17vw; }
+    #map{ margin-top: 14.17vw; height: 80vw; }
+    .cta-list .tel{ font-size: 26px; }
+    .party-item+.party-item{ margin-top: 10vw; }
+    .par1 .ab-title{ margin-bottom: 5.83vw; }
+    .par1 .pager{ margin-top: 11.67vw; }
+    .pro1 .pro-list, .par2 .issue-list, .par2 .briefing-list, .par2 .party-nav{ margin-bottom: 6.67vw; }
+    .briefing-list li{ margin-bottom: 5vw; }
+    .issue-list li{ margin-bottom: 5vw; }
+    .news-list li{ margin-bottom: 10px; }
+    .news-list{ margin-left: -10px; }
+    .news-list a{ margin-left: 10px; }
+    .ab9 .news-list{ margin-bottom: 10vw; }
+    .par2 .branch-list{ margin-bottom: 9.17vw; }
+    .branch-list li{ margin-bottom: 15px; }
+    .branch-list{ margin-left: -15px; }
+    .branch-list a{ margin-left: 15px; }
+    .question-list .question{ margin-bottom: 5.83vw; }
+    .question-list li+li{ margin-top: 11.67vw; }
+    .pro-list li{ width: 100%; margin-bottom: 5vw; }
+    .pro-list a{ box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .pro-list .txts{ padding-left: 5%; padding-right: 5%; }
+    .pro2{ padding-top: 13.33vw; padding-bottom: 10.83vw; }
+    .pro-pa .pro-title{ margin-bottom: 5.83vw; }
+    .pro-cont .nd-t{ padding-top: 10vw; }
+    .pro3 .pro-cont .pw{ padding-top: 12.5vw; }
+    .pro3, .progress-list{ padding-bottom: 15vw; }
+    .asset-list li+li, .str-business-list li+li, .progress-list li+li{ margin-top: 8.33vw; }
+    .innovate-list li+li{ margin-top: 6.67vw; }
+    .innovate-list .txts{ padding-top: 5.83vw; }
+    .layout-list .pro-title{ margin-bottom: 5.83vw; }
+    .layout-list li{ padding-left: 5vw; }
+    .layout-list .pic{ float: none; height: auto; width: 180px; margin-bottom: 10px; }
+    .layout-list .txts{ padding: 20px 5%; height: auto; }
+    .layout-list .freeTx{ padding: 0; }
+    .asset-list .picbox{ width: 100%; margin-right: 0; }
+    .asset-list .txts{ padding: 20px 5% 35px;  }
+    .asset-list a{ box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .str5{ padding-top: 13.33vw; padding-bottom: 10vw; }
+    .coop-list li{ margin-bottom: 5vw; }
+} 
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }
     .navMobile .mtv>a{ font-size: 14px; }
@@ -234,5 +450,38 @@
     .ab-business .ico{ transform-origin: center top; transform: scale(.75); margin-bottom: 0; }
     .ab-business li+li:before{ height: 30px; margin-top: -15px; }
     .ab9 .respo-list{ margin-bottom: 4.17vw; }
-    .respo-list a{ box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .party-news, .respo-list a{ box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
+    .nd-t .ti{ margin-bottom: 5vw; font-size: 22px; }
+    .news-back .icon{ margin-right: 5px; }
+    .news-tools li+li{ margin-left: 30px; }
+    .cta-list .tel{ font-size: 22px; }
+    .party-news .picbox{ display: block; width: 100%; margin-right: 0; }
+    .party-news .txts, .party-news-list{ padding-top: 15px; }
+    .briefing-list .pic{ width: 99px; margin-right: 10px; }
+    .briefing-list .tx{ line-height: 20px !important; height: 40px; }
+    .briefing-list a{ height: 182px; padding-top: 25px; }
+    .party-nav a{ font-size: 16px; }
+    .party-nav a+a{ padding-left: 16px; margin-right: 15px; }
+    .party-nav a+a:before{ height: 16px; margin-top: -8px; }
+    .issue-list .nowti{ font-size: 22px; }
+    .issue-list a{ padding-top: 30px; height: 180px; }
+    .news-list li{ width: 100%; margin-bottom: 5vw; }
+    .news-list .nowti{ font-size: 16px; line-height: 20px; }
+    .branch-list li{ margin-bottom: 10px; }
+    .branch-list{ margin-left: -10px; }
+    .branch-list a{ margin-left: 10px; }
+    .par2 .branch-list{ margin-bottom: 10vw; }
+    .question-list .dot{ width: 58px; height: 58px; font-size: 16px; line-height: 58px; }
+    .question-list .freeTx{ padding: 16px 20px; min-height: 58px; }
+    .question-list .txts:after, .question-list .txts:before{ top: 23px; }
+    .question-list .question .txts{ margin-left: 78px; }
+    .question-list .answer .txts{ margin-right: 78px; }
+    .pro-cont .ti{ width: 100%; max-width: none; margin-bottom: 10px; }
+    .pro-cont .share{ margin: 0; }
+    .progress-list .txts{ margin-left: 50px; }
+    .progress-list .b{ padding-left: 20px; padding-right: 20px; }
+    .progress-list .freeTx{ font-size: 14px; }
+    .progress-list .date{ font-size: 12px; }
+    .str-business-list .pai{ display: block; }
+    .str-business-list .txts{ padding-top: 20px; }
 }

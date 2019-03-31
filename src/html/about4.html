@@ -1,0 +1,95 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "about": "act"
+})
+@@include('./pbanner.html',{
+    "img": "ab_banner.jpg",
+    "ch": "旅投创新"
+})
+<div class="container page-bg pnav-point">
+    <div class="pnav">
+        <ul>
+            <li><a href="about.html">关于旅投</a></li>
+            <li><a href="about1.html">关于创新</a></li>
+            <li><a href="about2.html">企业文化</a></li>
+            <li><a href="about3.html">社会责任</a></li>
+            <li><a href="about4.html" class="act">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="page-cont">
+        <div class="bread-nav"><a href="index.html"><i class="icon iconfont icon-shouye"></i>首页</a>&nbsp;-&nbsp;<a href="about.html">旅投创新</a>&nbsp;-&nbsp;<a href="about3.html" class="act">社会责任</a></div>
+        <div class="ab11">
+            <div class="pw">
+                <ul class="cta-list">
+                    <li>
+                        <div class="title">
+                            <p class="ch">公司名</p>
+                            <p class="en">Company name</p>
+                        </div>
+                        <div class="txts">
+                            <p class="ch">四川旅投旅游创新开发有限责任公司</p>
+                            <p class="en">Sichuan Travel Investment Tourism Innovation and Development Co., Ltd.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <p class="ch">地址</p>
+                            <p class="en">address</p>
+                        </div>
+                        <div class="txts"><a href="#">
+                            <p class="ch">四川省成都市锦江区人民南路二段80号锦江宾馆锦苑楼9楼</p>
+                            <p class="en">9th Floor, Jinyuan Building, Jinjiang Hotel, No. 80, Second Section of Renmin South Road, Jinjiang District, Chengdu City, Sichuan Province</p>
+                        </a></div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <p class="ch">电话</p>
+                            <p class="en">Telephone number</p>
+                        </div>
+                        <div class="txts"><a href="tel:02885507963" class="na">
+                            <p class="tel">028-85507963</p>
+                        </a></div>
+                    </li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </div>
+        <!-- ab11 -->
+    </div>
+</div>
+<!-- container -->
+<div id="top"><i class="sj sj-t"></i>返回顶部</div>
+@@include('./footer.html')
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(76, 76))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+    })
+</script>   
+</body>
+</html>

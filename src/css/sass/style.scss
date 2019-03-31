@@ -561,3 +561,417 @@
     padding-top: 80px; padding-bottom: 90px;
     .respo-list{ margin-bottom: 55px - 40px; } 
 }
+
+.pw2{ width: 1000px; margin: 0 auto; }
+
+.share{
+    line-height: 18px; font-size: 12px; color: $fc3;
+    p{ float: left; margin-right: 12px; }
+    a{ width: 18px; height: 18px !important; border-radius: 50%; background: $fc3 !important; text-align: center; line-height: 18px !important; font-size: 12px !important; color: #fff !important; opacity: 1 !important;
+        + a{ margin-left: 7px !important; }
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1 !important; }
+        }
+    }
+}
+
+.news-tools{ line-height: 18px; color: $fc3; 
+    li + li{ margin-left: 40px; }
+}
+
+.news-date{ font-size: 14px; 
+    &:before{ margin-right: 6px; }
+}
+
+.nd-t{
+    border-bottom: 1px solid $hc1; padding: 130px 50px 18px;
+    .ti{ margin-bottom: 37px - 7px; font-weight: bold; font-size: 26px; color: $fc1; }
+}
+
+.nd-b{ padding: 60px 50px 120px; }
+
+.news-back{
+    li + li{ border-top: 1px solid $hc3; }
+    .icon{ @include di; margin-right: 20px; color: $hc1; font-size: 18px; }
+    .arrow .icon{ font-size: 24px; }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.act):hover{ background: $mc1; font-weight: normal; color: #fff; 
+                .icon{ color: #fff; }
+            }
+        }
+    }
+}
+
+.cta-list{
+    li{ overflow: hidden; 
+        + li{ margin-top: 40px; }
+    }
+    .title{ float: left; width: 215px; 
+        .ch{  font-weight: bold; color: $fc1; }
+    }
+    .ch{ margin-bottom: 14px - 8px; font-size: 16px; }
+    .en{ color: $fc3; line-height: 1.4; }
+    .txts{ overflow: hidden; min-height: 47px; border-left: 1px solid $hc1; padding: 0 125px 0 125px; }
+    .tel{ padding-top: (48px - 30px) / 2; font-size: 30px; line-height: 1;  font-style: italic; }
+    a{
+        @media screen and (min-width:1025px) {
+            &:not(.na):hover{ color: $mc1; }
+        }  
+    }
+}
+
+#map{ margin-top: (120 / 1640) * 100%; height: 600px; }
+
+.ab11{ padding-top: (120 / 1640) * 100%; }
+
+.party-page{
+    .pbanner .txts{ color: $mc1; }
+}
+
+.pw3{ width: 1200px; margin: 0 auto; }
+
+.party-news{
+    background: #fff;
+    .picbox{ width: 50%; margin-right: 45px; float: left; }
+    .pai{ padding-bottom: (380 / 600) * 100%; }
+    .txts{ overflow: hidden; padding-top: 55px; padding-right: 45px; font-size: 16px; color: $fc3;
+        .date{ margin-bottom: 10px; line-height: 1; font-style: italic; }
+        .tx{ height: 28px * 2; line-height: 28px !important; }
+        h3.tx{ font-size: 20px; color: $fc2; }
+        .line{ display: block; margin: 25px 0 28px - 6px; height: 1px; background: $hc3; }
+        .more{ margin-top: 61px - 6px; }
+    }
+    > a{
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .respo-more{ background: $mc1; border-color: $mc1; color: #fff; }
+            }
+        }
+    }
+}
+
+.party-news-list{
+    padding-top: 47px - 12px; padding-right: 45px;
+    .item{ border: none; }
+    .item > a{ display: block; line-height: 34px; overflow: hidden; 
+        @media screen and (min-width:1025px) {
+            &:hover{ color: $mc1; 
+                .date{ color: $mc1; }
+            }
+        }  
+    }
+    .date{ float: right; margin-left: 10px; font-size: 12px; font-style: italic; color: $fc3; @include mt3; }
+    .nowti{ line-height: 34px; }
+    .slick-dots{ position: static; margin-top: 42px - 12px; text-align: left; 
+        li{ border: 1px solid $hc1; margin: 0; width: 9px; height: 9px; background: #fff; @include bs; 
+            + li{ margin-left: 12px; }
+            @media screen and (min-width:1025px) {
+                &:hover{ background: $mc1; border-color: $mc1; }
+            }
+        }
+        .slick-active{ background: $mc1; border-color: $mc1; }
+    }
+}
+
+.par1{
+    padding-top: 80px; padding-bottom: 90px;
+    .ab-title{ margin-bottom: 35px; }
+    .pager{ margin-top: 70px; }
+}
+
+.party-item + .party-item{ margin-top: 80px; }
+
+.party-nav{
+    text-align: left;
+    a{ position: relative; margin-right: 20px; font-size: 18px; 
+        + a{ padding-left: 21px; 
+            &:before{ @include ba; left: 0; top: 50%; margin-top: -10px; width: 1px; height: 20px; background: $fc2; }
+        }
+        p{ position: relative; padding: 4px 0; 
+            &:before{ @include hl($mc1, 5px); }
+        }
+        &.act{
+            font-weight: bold; color: $fc1;
+            p:before{ @include hlw; }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                p:before{ @include hlw; }
+            }
+        }
+    }
+}
+
+.briefing-list{
+    margin-left: -30px;
+    li{ width: 50%; float: left; margin-bottom: 30px; }
+    a{ display: block; padding: 30px 35px 0; background: #fff; height: 196px; @include bs; margin-left: 30px; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                box-shadow: 3px 5px 8px rgba(0,0,0,.1);
+                .respo-more{ border-color: $mc1; background-color: $mc1; color: #fff; }
+                .nowti{ color: $mc1; }
+            }
+        }
+    }
+    .pic{ width: 120px; height: 80px; float: left; margin-right: 30px; }
+    .txts{ overflow: hidden; }
+    .nowti{ margin-bottom: 15px - 11px; font-size: 18px; color: $fc1; @include mt3; }
+    .tx{ height: 24px * 2; }
+    .more{ margin-top: 25px; }
+}
+
+.par2{
+    padding-top: 85px; padding-bottom: 90px;
+    .ab-title{ margin-bottom: 76px - 11px; }
+    .issue-list, .party-nav{ margin-bottom: 40px; }
+    .briefing-list{ margin-bottom: 70px - 30px; }
+}
+
+.par3{
+    background: #fff; padding-bottom: 80px; padding-top: 80px;
+    .ab-title{ margin-bottom: 75px; }
+}
+
+.issue-list{
+    margin-left: -30px;
+    li{ width: 50%; float: left; margin-bottom: 30px; }
+    a{ display: block; height: 200px; padding: 45px 50px 0; @include bg; margin-left: 30px; @include bs; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .respo-more{ border-color: $mc1; background-color: $mc1; color: #fff; }
+            }
+        }
+    }
+    .nowti{ font-size: 24px; color: $fc1; 
+        span{ @include di; position: relative; margin-right: 15px; padding-right: 16px; font-weight: bold; 
+            &:before{ @include ba; right: 0; top: 50%; margin-top: -9px; width: 1px; height: 18px; background: $fc3; }
+        }
+    }
+    .more{ margin-top: 58px - 5px; }
+    .respo-more{ background: $fc3; border-color: $fc3; color: #fff; }
+}
+
+.study-list{
+    a{ color: #fff; }
+    .tx{ height: 28px * 2; font-size: 20px; line-height: 28px !important; }
+    .respo-more{ background: none; border-color: #fff; }
+    .more{ margin-top: 25px; }
+}
+
+.news-list{
+    margin-left: -70px;
+    li{ width: 50%; float: left; margin-bottom: 70px; }
+    a{ display: block; position: relative; margin-left: 70px; color: #fff; }
+    .pai{ padding-bottom: (368 / 600) * 100%; 
+        &:after{ @include ba; @include tblr; background: url('../images/shadow.png') no-repeat center bottom; }
+    }
+    .nowti{ position: absolute; left: 35px; right: 35px; bottom: 20px; padding-left: 20px; font-size: 18px; border-left: 5px solid $mc1; line-height: 24px; }
+}
+
+.ab9 .party-nav{ margin-bottom: 55px; }
+
+.branch-list{
+    margin-left: -45px;
+    li{ width: 33.33%; float: left; margin-bottom: 45px; }
+    a{ display: block; margin-left: 45px; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                box-shadow: 3px 5px 8px rgba(0,0,0,.1); transform: translateY(-10px);
+            }
+        }
+    }
+    .pai{ padding-bottom: (112 / 408) * 100%; }
+}
+
+.par2 .branch-list{ margin-bottom: 25px; }
+
+.question-list{
+    li + li{ margin-top: 70px; }
+    .question, .answer{ overflow: hidden; }
+    .dot{ @include c(78px); background: $mc1; text-align: center; font-size: 20px; line-height: 78px; color: #fff; }
+    .question{
+        margin-bottom: 35px;
+        .dot{ float: left;  }
+        .txts{ margin-left: 50px + 78px; 
+            &:before{ right: 100%; border-right: 10px solid; color: $hc3; }
+        }
+        .freeTx{ background: $hc3; }
+    }
+    .answer{
+        .dot{ float: right;  }
+        .txts{ margin-right: 50px + 78px; text-align: right; 
+            &:after, &:before{ left: 100%; border-left: 10px solid; color: $hc3; }
+            &:after{ margin-left: -1px; color: #fff; }
+        }
+        .freeTx{ border: 1px solid $hc3; width: 565px; }
+    }
+    .txts{ position: relative; 
+        &:after, &:before{ @include ba; top: 33px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+    }
+    .freeTx{ @include di; max-width: 100%; @include bs; min-height: 78px; padding: (78px - 28px) / 2 50px; font-size: 16px; }
+}
+
+.pro-list{
+    li{ width: 33.33%; float: left; }
+    a{ display: block; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: #fff;
+                .nowti{ color: $mc1; }
+                .respo-more{ background: $mc1; border-color: $mc1; }
+            }
+        }
+    }
+    .pai{ padding-bottom: (350 / 546) * 100%; }
+    .txts{ height: 245px; padding: 45px 45px 0; @include bs; overflow: hidden; }
+    .nowti{ margin-bottom: 10px; font-size: 24px; color: $fc1; @include mt3; }
+    .tx{ margin-bottom: 30px; font-size: 16px; line-height: 26px !important; height: 26px * 2; }
+    .respo-more{ background: $fc3; border-color: $fc3; color: #fff; }
+}
+
+.pro1{
+    padding-bottom: 90px;
+    .pro-list{ margin-bottom: 70px; }
+}
+
+.pro-pa{ padding-left: 80px; 
+    .pro-title{ width: 155px; padding-top: 15px; float: left; }
+}
+
+.pro-cont{ overflow: hidden; background: #fff; 
+    .pw{ margin: 0; padding: 0 (1138px - 900px) / 2; @include bs; max-width: 100%; }
+    .nd-t, .nd-b{ padding-left: 0; padding-right: 0; }
+    .ti{ float: left; width: 70%; margin-bottom: 10px; }
+    .share{ float: right; margin-top: (36px - 18px) / 2; }
+    .nd-t{ padding-top: 60px; }
+}
+
+.pro-title{
+    .en{ color: $fc3; }
+    .ch{ margin-bottom: 12px - 6px; font-size: 16px; font-weight: bold; color: $fc1; }
+}
+
+.pro2{ padding-top: 80px; padding-bottom: 65px; }
+
+.progress-list{
+    position: relative; padding-bottom: 90px;
+    &:before{ @include ba; top: 5px; bottom: 0; left: 7px; width: 1px; background: $hc3; }
+    li{ position: relative; 
+        &:after{ @include ba; left: 0; top: 5px; @include c(15px); background: $hc3; @include mt3; }
+        + li{ margin-top: 50px; }
+        &:nth-child(2n-1){
+            .b{ width: 610px; max-width: 100%; @include bs; }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:after{ background: $mc1; }
+            }
+        }
+    }
+    .txts{ position: relative; margin-left: 80px; 
+        &:before{ @include ba; top: 10px; right: 100%; border-right: 5px solid; border-top: 3px solid transparent; border-bottom: 3px solid transparent; color: $hc3; }
+    }
+    .date{ margin-bottom: 6px; color: $fc3; }
+    .freeTx{ font-size: 16px; }
+    .b{ padding: 18px 35px 22px; background: $hc3; }
+}
+
+.pro3{
+    padding-bottom: 90px;
+    .pro-cont .pw{ padding-top: 75px; padding-right: 0; }
+}
+
+.innovate-list{
+    li{ position: relative; padding-right: 21%; 
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .txts{ transform: translateY(20px); background: $mc1; color: #fff; }
+                .ti{ color: #fff; 
+                    .num{ color: #fff; }
+                }
+            }
+        }
+        + li{ margin-top: 80px; }
+        &:nth-child(2n){
+            padding-left: 21%; padding-right: 0;
+            .txts{ right: auto; left: 0; }
+        }
+    }
+    .pai{ padding-bottom: (550 / 900) * 100%; }
+    .txts{ position: absolute; right: 0; top: 50%; margin-top: -153px; width: 578px; height: 306px; background: #fff; padding: 35px 70px; @include bs; @include mt4; }
+    .ti{ line-height: 1; font-size: 26px; color: $fc1; @include mt4;
+        .num{ @include di; margin-bottom: -8px; margin-right: 18px; font-size: 46px; font-style: italic; color: $mc1; @include mt4; }
+    }
+    .freeTx{ margin-top: 20px; font-size: 16px; }
+}
+
+.str1{ padding-top: 90px; padding-bottom: 100px; }
+
+.str-business-list{
+    li{ width: 50%; float: left; 
+        &:nth-child(10), &:nth-child(7), &:nth-child(6), &:nth-child(3), &:nth-child(2) { background: #fff; }
+    }
+    .pai{ padding-bottom: (300 / 820) * 100%; }
+    .txts{ height: 340px; padding: 60px (105 / 820) * 100% 0; overflow: hidden; @include bs; }
+    .ico{ position: absolute; left: 0; top: 50%; margin-top: -20px; width: 46px; height: 40px; background-position: left center; }
+    .ti{ position: relative; font-size: 26px; color: $fc1; padding-left: 50px; }
+    .freeTx{ margin-top: 27px - 12px; font-size: 16px; max-height: 180px; @include sy; }
+}
+
+.str3{ padding: 85px 0 90px (238 / 1640) * 100%; }
+
+.layout-list{
+    li{ border-left: 1px solid $hc1; padding-left: 30px; @include mt3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1; color: #fff; border-color: $mc1;
+                .txts{ background: $mc1; }
+                .pro-title .en, .pro-title .ch{ color: #fff; }
+                .pro-title{ padding-top: 30px; }
+            }
+        }
+    }
+    .pro-title{ width: 230px; float: left; @include mt3;
+        .ch, .en{ @include mt3; }
+    }
+    .txts{ overflow: hidden; height: 150px; background: #fff; }
+    .pic{ float: left; width: 274px; height: 100%; }
+    .freeTx{ padding-left: 10%; padding-right: 10%; height: 100%; font-size: 16px; 
+        p{ width: 480px; max-width: 100%; }
+    }
+    li + li{ margin-top: 40px; }
+}
+
+.asset-list{
+    a{ display: block; 
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc3; 
+                .respo-more{ background: $mc1; border-color: $mc1; color: #fff; }
+            }
+        }
+    }
+    .picbox{ width: 590px; float: left; margin-right: (90 / 1640) * 100%; }
+    .txts{ overflow: hidden; padding-top: 135px; padding-right: (90 / 1640) * 100%; }
+    .pai{ padding-bottom: (500 / 590) * 100%; }
+    .nowti{ margin-bottom: 20px; border-left: 5px solid $mc1; padding-left: 20px; line-height: 1; font-size: 30px; color: $fc1; }
+    .tx{ margin-bottom: 80px; font-size: 16px; line-height: 28px !important; max-height: 28px * 3; }
+    .respo-more{ width: 150px; border-radius: 30px; line-height: 46px; font-size: 14px; background: $fc3; border-color: $fc3; color: #fff; }
+}
+
+.str5{ margin: 0 auto; padding-top: 80px; padding-bottom: 90px - 50px; width: 1380px; }
+
+.coop-list{
+    margin-left: -50px;
+    li{ width: 50%; float: left; margin-bottom: 50px; }
+    .ma{ margin-left: 50px; height: 220px; background: #fff; overflow: hidden; @include mt3;
+        @media screen and (min-width:1025px) {
+            &:hover{ background: $mc1; color: #fff; }
+        }
+    }
+    .lg{ text-align: center; background: #fff; padding: 0 70px; height: 78px; line-height: 78px; border-bottom: 1px solid $hc3; 
+        img{ vertical-align: middle; max-width: 100%; }
+    }
+    .freeTx{ padding: 30px 70px 0; font-size: 16px; text-align: center; }
+}
