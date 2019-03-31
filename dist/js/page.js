@@ -47,17 +47,6 @@ function pageBox() {
             }
         });
     }
-
-    // var pbalen = $('.pbanner').size();
-    // if (pbalen) {
-    //     if (!isMobile) {
-    //         $('.pbanner').css({height: w_height - $mtoph});
-    //         setImgMax($('.pbanner .pic2'), 1920, 900, w_width, w_height - $mtoph);
-    //     } else {
-    //         $('.pbanner').css({height: 'auto'});
-    //         $('.pbanner .pic2').attr({style: ''});
-    //     }
-    // } 
 };
 
 pageBox();
@@ -101,49 +90,12 @@ $(function () {
             $('#top').removeClass('change');
         }
     }
-    // $('.nav li>a').mouseenter(function() {
-    //     var $next = $(this).next('.pull-nav'),
-    //         nextLen = $next.length;
-    //     if (nextLen) {
-    //         $(this).addClass('act2');
-    //         $next.stop().slideDown();
-    //     }
-    // });
-
-    // $('.nav li').mouseleave(function() {
-    //     var $a = $(this).find('a'),
-    //         _act = $a.hasClass('act2'),
-    //         $next = $(this).find('.pull-nav');
-    //     if (_act) {
-    //         $a.removeClass('act2');
-    //         $next.stop().slideUp();
-    //     }
-    // });
-
-
     
     if ($('.splwo').length !== 0) {
         $('.splwo').each(function(i) {
             splitWords($(this));
         });
     }
-
-    $('.top-search > .icon').bind(_click, function() {
-        if (!isMobile) { return; }
-        var $parent = $(this).parent();
-        var _act = $parent.hasClass('act');
-        var $next = $(this).next();
-        if (_act) {
-            $parent.removeClass('act');
-            $next.slideUp();
-        } else {
-            $parent.addClass('act');
-            $next.slideDown();
-        }
-    });
-	
-	
-
 
     // 友情链接
     var isopen = 0;
@@ -163,9 +115,6 @@ $(function () {
         $('.friendship-link').removeClass('act');
         $('.friendship-link .k').stop().slideUp(300);
     });
-
-
-
 
 	// 手机导航
 	$('.navMobile dd > a').bind(_click, function (e) {

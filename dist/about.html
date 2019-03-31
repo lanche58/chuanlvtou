@@ -305,21 +305,6 @@
 <script src="js/video/player.mini.js"></script>
 <script src="js/page.js"></script>
 <script>
-    function indexBox() {
-        if(!isMobile){
-            $('.banner').css({ height: w_height - $mtoph });
-            $('.banner .item').css({ height: w_height - $mtoph });
-            setImgMax($('.banner .pic2'), 1920, 950, w_width, w_height - $mtoph);
-        }else{
-            $('.banner').css({ height: 'auto' });
-            $('.banner .item').css({ height: 'auto' });
-            $('.banner .pic2').attr({ 'style': '' });
-        }
-    }
-    indexBox();
-    $(window).resize(function() {
-        indexBox();
-    });
     $(function(){
         function removeSlick() {
             var isSlick = $('.ab-block-list').hasClass('slick-slider');
@@ -337,75 +322,6 @@
         removeSlick();
         $(window).resize(function() {
             removeSlick();
-        });
-
-
-
-
-        $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
-            $('.banner .item').first().addClass('active');
-        });
-        $('.banner').slick({
-            speed: 1000,
-            arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            fade: true,
-            pauseOnHover: false
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('.banner .item').removeClass('active');
-            $('.banner .item').eq(nextSlide).addClass('active');
-        });
-        $('.recruitment-notice-list').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            vertical: true,
-            autoplay: true,
-            autoplaySpeed: 0,
-            speed: 2000,
-            pauseOnHover: false,
-            cssEase: 'linear',
-            responsive: [{
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-        $('.ip-list').slick({
-            arrows: false,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000
-        });
-        function changeNews(i) {
-            $('.in-nav li').removeClass('act').eq(i).addClass('act');
-            $('.in-cont li').hide().eq(i).show();
-        }
-        changeNews(0);
-        $('.in-nav li').bind(_click, function() {
-            var index = $(this).index();
-            changeNews(index);
-        });
-        $('.ix-pro').slick({
-            speed: 1000,
-            arrows: true,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            fade: true,
-            pauseOnHover: false
-        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('.ix-pro .item').removeClass('active');
-            $('.ix-pro .item').eq(nextSlide).addClass('active');
-        });
-        $('.ix-link li').each(function(i, e) {
-            $(this).css({
-                'transition-delay': 200*i + 'ms',
-                '-webkit-transition-delay': 200*i + 'ms'
-            });
         });
     })
 </script>
