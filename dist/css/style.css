@@ -732,16 +732,20 @@ a.pswp__share--download:hover{background:#ddd}
 .navMobile .mtv{display:none;background:#c82126;padding:10px 0}
 .navMobile .mtv>a{padding-top:6px;padding-bottom:6px;font-size:16px}
 .page-pa{padding-left:80px;padding-right:80px}
-.footer{position:relative;z-index:99;background:#333;padding-top:63px;padding-bottom:88px;line-height:24px}
-.footer .logo{width:198px}
+.footer{position:relative;z-index:99;background:#333;padding-top:63px;padding-bottom:35px;line-height:24px}
+.footer .logo{float:left}
+.footer .logo>img{float:left;width:198px;margin-right:20px}
+.footer .logo p{float:left;border-left:1px solid #545454;padding-left:20px;margin-top:34px;line-height:18px;font-size:16px;color:#fff}
+.footer .friendship-link{float:right}
 .footer .f-nav{margin-top:40px;padding-top:43px;border-top:1px solid #545454}
-.footer .b{margin-top:36px}
 .footer .f-cop{margin-top:20px}
-.footer .f-share{margin-top:40px;text-align:right}
 @media screen and (min-width:1025px){
 .footer a:hover{color:#c82126}
 }
-.footer .l,.footer .r{max-width:50%}
+.footer .f-ma{margin-top:-24px}
+.footer .l{padding-top:60px}
+.f-ma{width:162px;text-align:center}
+.f-ma img{margin-bottom:12px}
 .f-nav a{float:left;margin-right:42px;color:#fff;font-size:16px;font-weight:700}
 .f-cta a{color:#999}
 .f-cop a{display:block}
@@ -1420,16 +1424,22 @@ a.pswp__share--download:hover{background:#ddd}
 .coop-list li{margin-bottom:30px}
 .coop-list .freeTx,.coop-list .lg{padding-left:30px;padding-right:30px}
 .coop-list .freeTx{padding-top:20px}
+.f-nav a{font-size:15px;margin-right:32px}
 }
 @media screen and (max-width:1201px){
-.header .nav>li>a{padding-left:10px;padding-right:10px}
-.header .link{width:auto;height:auto;border:none;margin:28px 20px 0 10px;line-height:24px;font-size:14px}
+.header .nav>li>a{padding-left:7px;padding-right:7px;font-size:13px}
+.header .link{width:auto;height:auto;border:none;margin:28px 20px 0 10px;line-height:24px;font-size:13px}
 .page-pa{padding-left:40px;padding-right:40px}
 .in-cont{padding-right:40px}
 .in-cont .in-hot{display:none}
 .ix-news .in-nav{margin-bottom:40px}
 .ab-block-list .slick-arrow{left:40px}
 .pro-pa{padding-left:40px}
+.f-nav a{font-size:14px;margin-right:25px}
+}
+@media screen and (max-width:1101px){
+.footer .f-ma{display:none}
+.footer .l{padding-top:35px}
 }
 @media screen and (max-width:1024px){
 .header,.mtop{height:60px}
@@ -1582,6 +1592,10 @@ a.pswp__share--download:hover{background:#ddd}
 .coop-list li{width:100%;float:none}
 .coop-list .ma{height:auto;padding-bottom:40px;box-shadow:3px 5px 8px rgba(0,0,0,.1)}
 .coop-list .freeTx,.coop-list .lg{padding-left:5%;padding-right:5%}
+.footer .logo{display:none}
+.footer .friendship-link{float:none}
+.footer .f-nav{padding-top:0;border:none}
+.footer{padding-top:35px}
 }
 @media screen and (max-width:641px){
 .ab-info .ab-video{float:none;width:100%;margin:0 0 35px}
@@ -1609,13 +1623,7 @@ a.pswp__share--download:hover{background:#ddd}
 .banner .slick-dots{bottom:5vw}
 .banner .slick-dots li{width:3.33vw;margin:0 1vw}
 .banner .slick-dots .slick-active{width:6.67vw}
-.footer{padding-top:10vw;padding-bottom:15vw}
-.footer .f-nav{margin-top:6.67vw;padding-top:7.5vw}
 .f-nav a{margin-right:5vw}
-.footer .b{margin-top:6vw}
-.footer .f-share{margin-top:6.67vw}
-.footer .l{padding-top:5vw}
-.footer .f-cop{margin-top:3.33vw}
 .ix-title .ti{font-size:26px}
 .ix-title .plus-more{margin-top:2px}
 .plus-more{width:32px;height:32px;line-height:32px}
