@@ -422,6 +422,7 @@
     .asset-list a{ box-shadow: 3px 5px 8px rgba(0,0,0,.1); }
     .str5{ padding-top: 13.33vw; padding-bottom: 10vw; }
     .coop-list li{ margin-bottom: 5vw; }
+    .pro3 .cta-list{ padding-bottom: 13.33vw; }
 } 
 @media screen and (max-width:481px) {
     .navMobile dd>a{ padding: 16px 0; font-size: 16px; }

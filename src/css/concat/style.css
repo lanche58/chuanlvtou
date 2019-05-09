@@ -1298,6 +1298,21 @@
   .cta-list a:not(.na):hover {
     color: #c82126; } }
 
+.cta-list .addr-ch {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 3px; }
+
+.cta-list .addr-en {
+  color: #999;
+  line-height: 1.3; }
+
+.cta-list2 .txts {
+  padding-left: 60px; }
+
+.cta-list2 .title {
+  width: 150px; }
+
 #map {
   margin-top: 7.31707%;
   height: 600px; }
@@ -1827,6 +1842,8 @@
   .pro3 .pro-cont .pw {
     padding-top: 75px;
     padding-right: 0; }
+  .pro3 .cta-list {
+    padding-bottom: 80px; }
 
 .innovate-list li {
   position: relative;

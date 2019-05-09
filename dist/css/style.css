@@ -1069,6 +1069,10 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (min-width:1025px){
 .cta-list a:not(.na):hover{color:#c82126}
 }
+.cta-list .addr-ch{font-size:16px;line-height:1.4;margin-bottom:3px}
+.cta-list .addr-en{color:#999;line-height:1.3}
+.cta-list2 .txts{padding-left:60px}
+.cta-list2 .title{width:150px}
 #map{margin-top:7.31707%;height:600px}
 .ab11{padding-top:7.31707%}
 .party-page .pbanner .txts{color:#c82126}
@@ -1222,6 +1226,7 @@ a.pswp__share--download:hover{background:#ddd}
 .progress-list .b{padding:18px 35px 22px;background:#f2f2f2}
 .pro3{padding-bottom:90px}
 .pro3 .pro-cont .pw{padding-top:75px;padding-right:0}
+.pro3 .cta-list{padding-bottom:80px}
 .innovate-list li{position:relative;padding-right:21%}
 @media screen and (min-width:1025px){
 .innovate-list li:hover .txts{-webkit-transform:translateY(20px);-moz-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);background:#c82126;color:#fff}
@@ -1696,6 +1701,7 @@ a.pswp__share--download:hover{background:#ddd}
 .asset-list a{box-shadow:3px 5px 8px rgba(0,0,0,.1)}
 .str5{padding-top:13.33vw;padding-bottom:10vw}
 .coop-list li{margin-bottom:5vw}
+.pro3 .cta-list{padding-bottom:13.33vw}
 }
 @media screen and (max-width:481px){
 .navMobile dd>a{padding:16px 0;font-size:16px}

@@ -631,6 +631,24 @@
             &:not(.na):hover{ color: $mc1; }
         }  
     }
+    .addr-ch{
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 3px;
+    }
+    .addr-en{
+        color: $fc3;
+        line-height: 1.3;
+    }
+}
+
+.cta-list2{
+    .txts{
+        padding-left: 60px;
+    }
+    .title{
+        width: 150px;
+    }
 }
 
 #map{ margin-top: (120 / 1640) * 100%; height: 600px; }
@@ -893,6 +911,7 @@
 .pro3{
     padding-bottom: 90px;
     .pro-cont .pw{ padding-top: 75px; padding-right: 0; }
+    .cta-list{ padding-bottom: 80px; }
 }
 
 .innovate-list{
